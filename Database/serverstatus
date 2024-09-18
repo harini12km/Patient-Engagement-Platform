@@ -1,0 +1,8 @@
+// Check current server status
+db.serverStatus();
+
+// View the current operation
+db.currentOp();
+
+// View logs
+db.adminCommand({ getLog: "global" });
