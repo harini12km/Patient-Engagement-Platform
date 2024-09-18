@@ -1,0 +1,44 @@
+db.users.insertMany([
+    {
+        _id: ObjectId("64c72b2f9b1d8b3a4c8b456F"),
+        userId: UUID("ec1eced7-055a-4ca8-8737-60dd02c5279B"),
+        name: "Grace Taylor",
+        role: "patient",
+        email: "grace.taylor@example.com"
+    },
+    {
+        _id: ObjectId("64c72b2f9b1d8b3a4c8b4570"),
+        userId: UUID("ec1eced7-055a-4ca8-8737-60dd02c5279C"),
+        name: "Dr. Steven Harris",
+        role: "provider",
+        email: "steven.harris@example.com"
+    },
+    {
+        _id: ObjectId("64c72b2f9b1d8b3a4c8b4571"),
+        userId: UUID("ec1eced7-055a-4ca8-8737-60dd02c5279D"),
+        name: "Mia Anderson",
+        role: "admin",
+        email: "mia.anderson@example.com"
+    },
+    {
+        _id: ObjectId("64c72b2f9b1d8b3a4c8b4572"),
+        userId: UUID("ec1eced7-055a-4ca8-8737-60dd02c5279E"),
+        name: "Ethan Wilson",
+        role: "patient",
+        email: "ethan.wilson@example.com"
+    },
+    {
+        _id: ObjectId("64c72b2f9b1d8b3a4c8b4573"),
+        userId: UUID("ec1eced7-055a-4ca8-8737-60dd02c5279F"),
+        name: "Dr. Laura Young",
+        role: "provider",
+        email: "laura.young@example.com"
+    },
+    {
+        _id: ObjectId("64c72b2f9b1d8b3a4c8b4574"),
+        userId: UUID("ec1eced7-055a-4ca8-8737-60dd02c527A0"),
+        name: "James Lee",
+        role: "admin",
+        email: "james.lee@example.com"
+    }
+]);
