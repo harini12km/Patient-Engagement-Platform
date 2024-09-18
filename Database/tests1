@@ -1,0 +1,86 @@
+db.tests.insertMany([
+    {
+        testName: "Allergy Test",
+        description: "Test to detect specific allergens using a small blood sample or other methods.",
+        price: 50.00, // Example price
+        duration: "1-2 weeks" // Duration may vary based on test type
+    },
+    {
+        testName: "Hemoglobin A1c Test",
+        description: "Test to measure average blood glucose levels over time, useful for diabetes management.",
+        price: 30.00,
+        duration: "1 hour"
+    },
+    {
+        testName: "Pregnancy Test (Early Detection)",
+        description: "Early detection pregnancy test to determine pregnancy status earlier than standard tests.",
+        price: 15.00,
+        duration: "30 minutes"
+    },
+    {
+        testName: "STI Test",
+        description: "Tests for common sexually transmitted infections like chlamydia, gonorrhea, and herpes using blood, urine, or swab samples.",
+        price: 80.00, // Example price for comprehensive testing
+        duration: "1-2 weeks"
+    },
+    {
+        testName: "Fertility Test",
+        description: "Tests to measure hormone levels or sperm count for assessing fertility.",
+        price: 60.00, // Example price
+        duration: "1 hour"
+    },
+    {
+        testName: "Vitamin B12 Test",
+        description: "Test to measure vitamin B12 levels using a blood sample.",
+        price: 25.00,
+        duration: "1 hour"
+    },
+    {
+        testName: "Kidney Function Test",
+        description: "Tests to evaluate kidney function using urine or blood samples.",
+        price: 40.00, // Example price
+        duration: "1-2 days"
+    },
+    {
+        testName: "Electrolyte Test",
+        description: "Tests to measure electrolyte levels using a blood sample.",
+        price: 35.00,
+        duration: "1 hour"
+    },
+    {
+        testName: "Hormone Levels Test",
+        description: "Tests to measure hormone levels such as estrogen, testosterone, and cortisol using blood or saliva samples.",
+        price: 50.00, // Example price
+        duration: "1 hour"
+    },
+    {
+        testName: "COVID-19 Antigen Test",
+        description: "At-home test to detect COVID-19 antigen.",
+        price: 30.00,
+        duration: "15 minutes"
+    },
+    {
+        testName: "Tuberculosis (TB) Test",
+        description: "Test to detect tuberculosis, usually administered and interpreted by a healthcare professional.",
+        price: 70.00, // Example price
+        duration: "1-2 weeks"
+    },
+    {
+        testName: "Celiac Disease Test",
+        description: "Test to detect antibodies related to celiac disease.",
+        price: 60.00,
+        duration: "1 week"
+    },
+    {
+        testName: "Inflammation Markers Test",
+        description: "Test to measure inflammation markers using blood samples.",
+        price: 45.00,
+        duration: "1 hour"
+    },
+    {
+        testName: "Genetic Testing",
+        description: "Test to analyze genetic information for various conditions and traits.",
+        price: 200.00, // Example price
+        duration: "2-4 weeks"
+    }
+]);
