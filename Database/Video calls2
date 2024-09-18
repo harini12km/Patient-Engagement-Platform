@@ -1,0 +1,42 @@
+db.videoCalls.insertMany([
+    {
+        _id: ObjectId("64c72b2f9b1d8b3a4c8b4584"),
+        patientId: ObjectId("64c72b2f9b1d8b3a4c8b457B"),
+        providerId: ObjectId("64c72b2f9b1d8b3a4c8b457C"),
+        scheduledTime: new Date("2023-10-15T13:00:00Z"),
+        status: "Scheduled",
+        meetingLink: "https://example.com/meeting/22334"
+    },
+    {
+        _id: ObjectId("64c72b2f9b1d8b3a4c8b4585"),
+        patientId: ObjectId("64c72b2f9b1d8b3a4c8b457D"),
+        providerId: ObjectId("64c72b2f9b1d8b3a4c8b457E"),
+        scheduledTime: new Date("2023-10-17T15:30:00Z"),
+        status: "Completed",
+        meetingLink: "https://example.com/meeting/44556"
+    },
+    {
+        _id: ObjectId("64c72b2f9b1d8b3a4c8b4586"),
+        patientId: ObjectId("64c72b2f9b1d8b3a4c8b457F"),
+        providerId: ObjectId("64c72b2f9b1d8b3a4c8b457C"),
+        scheduledTime: new Date("2023-10-20T10:00:00Z"),
+        status: "Completed",
+        meetingLink: "https://example.com/meeting/66778"
+    },
+    {
+        _id: ObjectId("64c72b2f9b1d8b3a4c8b4587"),
+        patientId: ObjectId("64c72b2f9b1d8b3a4c8b4580"),
+        providerId: ObjectId("64c72b2f9b1d8b3a4c8b457D"),
+        scheduledTime: new Date("2023-10-22T12:00:00Z"),
+        status: "Scheduled",
+        meetingLink: "https://example.com/meeting/88990"
+    },
+    {
+        _id: ObjectId("64c72b2f9b1d8b3a4c8b4588"),
+        patientId: ObjectId("64c72b2f9b1d8b3a4c8b4581"),
+        providerId: ObjectId("64c72b2f9b1d8b3a4c8b457E"),
+        scheduledTime: new Date("2023-10-25T14:30:00Z"),
+        status: "Cancelled",
+        meetingLink: "https://example.com/meeting/33445"
+    }
+]);
