@@ -1,0 +1,142 @@
+db.feedback.insertMany([
+    {
+        customerId: ObjectId("66e6a68afe5423480cccd700"), // Reference to a patient document
+        providerId: ObjectId("66e6ae24fe5423480cccd742"), // Reference to a doctor document
+        rating: 5,
+        comments: "Outstanding service, doctor was very attentive.",
+        timestamp: new Date("2023-10-16T08:00:00Z")
+    },
+    {
+        customerId: ObjectId("66e6a68afe5423480cccd701"),
+        providerId: ObjectId("66e6ae24fe5423480cccd733"),
+        rating: 2,
+        comments: "Disappointing experience, did not address my concerns.",
+        timestamp: new Date("2023-10-17T09:30:00Z")
+    },
+    {
+        customerId: ObjectId("66e6a68afe5423480cccd702"),
+        providerId: ObjectId("66e6ae24fe5423480cccd734"),
+        rating: 4,
+        comments: "Good, but the consultation felt rushed.",
+        timestamp: new Date("2023-10-18T10:45:00Z")
+    },
+    {
+        customerId: ObjectId("66e6a68afe5423480cccd703"),
+        providerId: ObjectId("66e6ae24fe5423480cccd735"),
+        rating: 5,
+        comments: "Doctor was very professional and thorough.",
+        timestamp: new Date("2023-10-19T11:15:00Z")
+    },
+    {
+        customerId: ObjectId("66e6a68afe5423480cccd704"),
+        providerId: ObjectId("66e6ae24fe5423480cccd736"),
+        rating: 3,
+        comments: "Average service, could be more punctual.",
+        timestamp: new Date("2023-10-20T12:30:00Z")
+    },
+    {
+        customerId: ObjectId("66e6a68afe5423480cccd705"),
+        providerId: ObjectId("66e6ae24fe5423480cccd737"),
+        rating: 4,
+        comments: "Good care, but follow-up could improve.",
+        timestamp: new Date("2023-10-21T14:00:00Z")
+    },
+    {
+        customerId: ObjectId("66e6a798fe5423480cccd706"),
+        providerId: ObjectId("66e6ae24fe5423480cccd738"),
+        rating: 5,
+        comments: "Wonderful service, very happy with the results.",
+        timestamp: new Date("2023-10-22T15:30:00Z")
+    },
+    {
+        customerId: ObjectId("66e6a798fe5423480cccd707"),
+        providerId: ObjectId("66e6ae24fe5423480cccd739"),
+        rating: 1,
+        comments: "Very poor service, I felt neglected.",
+        timestamp: new Date("2023-10-23T16:00:00Z")
+    },
+    {
+        customerId: ObjectId("66e6a798fe5423480cccd708"),
+        providerId: ObjectId("66e6ae24fe5423480cccd73a"),
+        rating: 5,
+        comments: "Fantastic experience, doctor was very kind.",
+        timestamp: new Date("2023-10-24T17:30:00Z")
+    },
+    {
+        customerId: ObjectId("66e6a798fe5423480cccd709"),
+        providerId: ObjectId("66e6ae24fe5423480cccd73b"),
+        rating: 3,
+        comments: "Service was okay, could be more organized.",
+        timestamp: new Date("2023-10-25T08:45:00Z")
+    },
+    {
+        customerId: ObjectId("66e6a798fe5423480cccd70a"),
+        providerId: ObjectId("66e6ae24fe5423480cccd73c"),
+        rating: 4,
+        comments: "Good consultation, but appointment was delayed.",
+        timestamp: new Date("2023-10-26T10:00:00Z")
+    },
+    {
+        customerId: ObjectId("66e6a798fe5423480cccd70b"),
+        providerId: ObjectId("66e6ae24fe5423480cccd73d"),
+        rating: 5,
+        comments: "Excellent service, highly recommended!",
+        timestamp: new Date("2023-10-27T11:30:00Z")
+    },
+    {
+        customerId: ObjectId("66e6a798fe5423480cccd70c"),
+        providerId: ObjectId("66e6ae24fe5423480cccd73e"),
+        rating: 2,
+        comments: "Not satisfied with the care provided.",
+        timestamp: new Date("2023-10-28T09:45:00Z")
+    },
+    {
+        customerId: ObjectId("66e6a798fe5423480cccd70d"),
+        providerId: ObjectId("66e6ae24fe5423480cccd73f"),
+        rating: 3,
+        comments: "Service was okay, but room for improvement.",
+        timestamp: new Date("2023-10-29T10:30:00Z")
+    },
+    {
+        customerId: ObjectId("66e6a798fe5423480cccd70e"),
+        providerId: ObjectId("66e6ae24fe5423480cccd740"),
+        rating: 4,
+        comments: "Good service, doctor was knowledgeable.",
+        timestamp: new Date("2023-10-30T13:00:00Z")
+    },
+    {
+        customerId: ObjectId("66e6a798fe5423480cccd70f"),
+        providerId: ObjectId("66e6ae24fe5423480cccd741"),
+        rating: 5,
+        comments: "Amazing service, exceeded my expectations.",
+        timestamp: new Date("2023-10-31T14:30:00Z")
+    },
+    {
+        customerId: ObjectId("66e6a798fe5423480cccd710"),
+        providerId: ObjectId("66e6ae24fe5423480cccd742"),
+        rating: 1,
+        comments: "Very poor experience, won't return.",
+        timestamp: new Date("2023-11-01T09:15:00Z")
+    },
+    {
+        customerId: ObjectId("66e6a798fe5423480cccd711"),
+        providerId: ObjectId("66e6ae24fe5423480cccd733"),
+        rating: 2,
+        comments: "Doctor seemed distracted, not a great visit.",
+        timestamp: new Date("2023-11-02T10:45:00Z")
+    },
+    {
+        customerId: ObjectId("66e6a798fe5423480cccd712"),
+        providerId: ObjectId("66e6ae24fe5423480cccd734"),
+        rating: 3,
+        comments: "Decent service, but expected more communication.",
+        timestamp: new Date("2023-11-03T12:00:00Z")
+    },
+    {
+        customerId: ObjectId("66e6a798fe5423480cccd713"),
+        providerId: ObjectId("66e6ae24fe5423480cccd735"),
+        rating: 4,
+        comments: "Very good, doctor was clear and helpful.",
+        timestamp: new Date("2023-11-04T13:45:00Z")
+    }
+]);
