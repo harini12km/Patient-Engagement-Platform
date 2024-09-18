@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My orders</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        h1 {
+            text-align: center;
+            color: #007bff;
+            margin: 20px 0;
+        }
+        .form-container {
+            width: 100vw;
+            height: 100vh;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+            box-sizing: border-box;
+            overflow-y: auto;
+            position: relative;
+        }
+        .back-button {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            padding: 10px 15px;
+            background-color: #333;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        .back-button:hover {
+            background-color: #555;
+        }
+        .items-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .item_display {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            padding: 10px;
+        }
+        .item_display img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .item_display h3 {
+            margin: 10px 0;
+            color: #007bff;
+        }
+        .item_display p {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+        .item_display a {
+            display: inline-block;
+            padding: 8px 15px;
+            margin: 5px;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+        .details {
+            background-color: #007bff;
+        }
+        .cart {
+            background-color: #28a745;
+        }
+        .details:hover {
+            background-color: #0056b3;
+        }
+        .cart:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <a href="#" class="back-button">Back</a>
+        <h1>My orders</h1>
+        
+        <div class="items-container">
+            <div class="item_display">
+                <img src="C:\Users\Naresh\OneDrive\Documents\Web\18.jpeg" alt="DIGENE GEL 200ML">
+                <div>
+                    <h3>DIGENE GEL 200ML</h3>
+                    <p>$30</p>
+                    <a class="details" href="#">Details</a>
+                </div>
+            </div>
+            <div class="item_display">
+                <img src="C:\Users\Naresh\OneDrive\Documents\Web\11.jpeg" alt="PARACETAMOL 500mg">
+                <div>
+                    <h3>PARACETAMOL 500mg</h3>
+                    <p>$20</p>
+                    <a class="details" href="#">Details</a>
+                </div>
+            </div>
+            <div class="item_display">
+                <img src="C:\Users\Naresh\OneDrive\Documents\Web\14.jpeg" alt="JUMPER PULSE OXYMETERS">
+                <div>
+                    <h3>JUMPER PULSE OXYMETERS</h3>
+                    <p>$25</p>
+                    <a class="details" href="#">Details</a>
+                </div>
+            </div>
+            <div class="item_display">
+                <img src="C:\Users\Naresh\OneDrive\Documents\Web\15.jpeg" alt="CROCIN ADVANCE 500MG">
+                <div>
+                    <h3>CROCIN ADVANCE 500MG</h3>
+                    <p>$120</p>
+                    <a class="details" href="#">Details</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

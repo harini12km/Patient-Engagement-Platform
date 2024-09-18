@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .sidebar {
+      width: 20%;
+      background-color: #f4f4f4;
+      padding: 20px;
+      height: 100vh;
+      position: fixed;
+    }
+    .main-content {
+      margin-left: 20%;
+      width: 80%;
+      padding: 20px;
+    }
+    .filter-column {
+      width: 20%;
+      padding: 20px;
+      background-color: #f9f9f9;
+      height: 100vh;
+      position: fixed;
+      right: 0;
+    }
+    .profile img {
+      border-radius: 50%;
+      width: 60px;
+    }
+    .profile-details {
+      margin-top: 10px;
+    }
+    .notification-card, .appointment-card {
+      border: 1px solid #ddd;
+      padding: 15px;
+      margin: 10px 0;
+      background-color: #fff;
+      transition: background-color 0.3s ease;
+    }
+    .notification-card:hover, .appointment-card:hover {
+      background-color: #f0f0f0;
+    }
+    .sidebar h2 {
+      color: #6b21a8;
+    }
+    .sidebar ul {
+      list-style: none;
+      padding: 0;
+    }
+    .sidebar ul li {
+      margin: 15px 0;
+    }
+    .sidebar ul li a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      padding: 10px;
+      border-radius: 5px;
+      transition: background-color 0.3s, color 0.3s;
+    }
+    .sidebar ul li a:hover {
+      background-color: #6b21a8;
+      color: #fff;
+    }
+    .sidebar ul li a i {
+      margin-right: 10px;
+    }
+    .sidebar ul li.active a {
+      background-color: #6b21a8;
+      color: #fff;
+    }
+    .sidebar ul li.active a:hover {
+      background-color: #5a1a8b;
+    }
+    .filter-column h3 {
+      color: #6b21a8;
+    }
+    .filter-column select, .filter-column input {
+      margin-bottom: 15px;
+    }
+    .search-bar {
+      margin-bottom: 20px;
+    }
+    .logout-btn {
+      margin-top: 20px;
+      display: block;
+    }
+    .theme-toggle-btn {
+      margin-top: 10px;
+      display: block;
+    }
+    .notification-bell {
+      position: relative;
+      cursor: pointer;
+    }
+    .notification-bell .badge {
+      position: absolute;
+      top: -10px;
+      right: -10px;
+      background-color: yellow;
+      color: white;
+    }
+    .calendar {
+      margin-top: 20px;
+    }
+    .prescription-card {
+      border: 1px solid #ddd;
+      padding: 15px;
+      margin: 10px 0;
+      background-color: #fff;
+    }
+    .notification-container, .appointment-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .notification-card, .appointment-card {
+      border: 1px solid #ddd;
+      padding: 15px;
+      background-color: #fff;
+      border-radius: 8px;
+      width: 100%;
+      max-width: 300px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      transition: box-shadow 0.3s ease, transform 0.3s ease;
+    }
+
+    .notification-card:hover, .appointment-card:hover {
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      transform: scale(1.02);
+    }
+
+    .notification-icon {
+      font-size: 24px;
+      color: #6b21a8;
+      margin-right: 15px;
+    }
+
+    .notification-details {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .appointment-card {
+      border-color: #b3d9ff;
+      background-color: #e7f1ff; 
+    }
+
+    .appointment-card h3 {
+      color: #003f6c;
+    }
+
+    .appointment-card p {
+      color: #003f6c; 
+    }
+
+    .appointment-card .btn-warning {
+      background-color:#1E90FF; 
+      border-color:#1E90FF;
+    }
+
+    .appointment-card .btn-warning:hover {
+      background-color: #00274d; 
+      border-color: #00274d;
+
+    }
+
+    @media (max-width: 768px) {
+      .sidebar, .main-content, .filter-column {
+        width: 100%;
+        height: auto;
+      }
+      .main-content {
+        margin-left: 0;
+      }
+    }
+
+
+  </style>
+</head>
+<body>
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <h2>Promotheon</h2>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Login</a></li>
+      <li><a href="#">My Appointment</a></li>
+      <li><a href="#">Medical Reminder</a></li>
+      <li><a href="#">Bed Schedule</a></li>
+      <li><a href="#">Patient Records</a></li>
+      <li><a href="#">Help Desk</a></li>
+      <li><a href="#">Medical Delivery</a></li>
+      <li><a href="#">Blood Link Hub</a></li>
+      <li><a href="#">My Orders</a></li>
+      <li><a href="#">Contact Us</a></li>
+
+    </ul>
+    <div class="profile">
+      <img src="C:\Users\Naresh\OneDrive\Documents\t1.jpeg" alt="Profile">
+      <div class="profile-details">
+        <p>Harini</p>
+        <p>Email: harini@gmail.com</p>
+        <p>Status: Active</p>
+      </div>
+    </div>
+    <button class="btn btn-danger logout-btn">Logout</button>
+    <button class="btn btn-secondary theme-toggle-btn" onclick="toggleTheme()">Toggle Dark Mode</button>
+  </div>
+  <div class="main-content">
+    <div class="search-bar">
+      <input type="text" class="form-control" placeholder="Search notifications or appointments...">
+    </div>
+
+    <h1>Notifications</h1>
+    <div class="d-flex justify-content-between">
+      <div class="notification-card">
+        <p>Dr. Aakash</p>
+        <p>October 15, 2023 - 10:00 AM</p>
+        <button class="btn btn-primary">View Detail</button>
+      </div>
+      <div class="notification-card">
+        <p>Dr. Ayesha</p>
+        <p>October 16, 2023 - 2:00 PM</p>
+        <button class="btn btn-primary">View Detail</button>
+      </div>
+      <div class="notification-card">
+        <p>Dr. Siddhesh</p>
+        <p>October 18, 2023 - 11:30 AM</p>
+        <button class="btn btn-primary">View Detail</button>
+      </div>
+    </div>
+
+    <h2>Upcoming Appointments</h2>
+    <div class="d-flex justify-content-between">
+      <div class="appointment-card">
+        <h3>Dr. Srinivas</h3>
+        <p>Blood Pressure: 120/80 mmHg</p>
+        <p>Nov 15, 2023</p>
+        <p>Duration: 30 mins</p>
+        <button class="btn btn-warning">Cancel Appointment</button>
+      </div>
+      <div class="appointment-card">
+        <h3>Dr. Kavya</h3>
+        <p>Cholesterol: 180 mg/dL</p>
+        <p>Nov 16, 2023</p>
+        <p>Duration: 45 mins</p>
+        <button class="btn btn-warning">Cancel Appointment</button>
+      </div>
+      <div class="appointment-card">
+        <h3>Dr. Navya</h3>
+        <p>Heart Rate: 72 bpm</p>
+        <p>Nov 18, 2023</p>
+        <p>Duration: 20 mins</p>
+        <button class="btn btn-warning">Cancel Appointment</button>
+      </div>
+    </div>
+
+    <div class="calendar">
+      <h2>Calendar View</h2>
+      <div id="calendar"></div>
+    </div>
+
+    <h2>My Prescriptions</h2>
+    <div class="prescription-card">
+      <h3>Prescription #1</h3>
+      <p>Medication: Atorvastatin</p>
+      <p>Dosage: 10 mg once daily</p>
+      <button class="btn btn-success">Refill</button>
+    </div>
+    <div class="prescription-card">
+      <h3>Prescription #2</h3>
+      <p>Medication: Metformin</p>
+      <p>Dosage: 500 mg twice daily</p>
+      <button class="btn btn-success">Refill</button>
+    </div>
+  </div>
+
+  <div class="filter-column">
+    <h3>Filters</h3>
+    <form>
+      <div class="mb-3">
+        <label for="hospital-type" class="form-label">Hospital Type</label>
+        <select class="form-select" id="hospital-type">
+          <option value="all">All</option>
+          <option value="private">Private</option>
+          <option value="public">Public</option>
+        </select>
+      </div>
+
+      <div class="mb-3">
+        <label for="specialist-type" class="form-label">Specialist</label>
+        <select class="form-select" id="specialist-type">
+          <option value="all">All</option>
+          <option value="cardiologist">Cardiologist</option>
+          <option value="dermatologist">Dermatologist</option>
+          <option value="neurologist">Neurologist</option>
+        </select>
+      </div>
+      <div class="mb-3">
+        <label for="time-preference" class="form-label">Time</label>
+        <select class="form-select" id="time-preference">
+          <option value="all">Any Time</option>
+          <option value="morning">Morning</option>
+          <option value="afternoon">Afternoon</option>
+          <option value="evening">Evening</option>
+           <option value="evening">Night</option>
+        </select>
+      </div>
+
+      <div class="mb-3">
+        <label for="sort-date" class="form-label">Sort by Date</label>
+        <select class="form-select" id="sort-date">
+          <option value="newest">Newest First</option>
+          <option value="oldest">Oldest First</option>
+        </select>
+      </div>
+
+      <button type="submit" class="btn btn-primary">Apply Filters</button>
+    </form>
+  </div>
+
+  <script>
+    function toggleTheme() {
+      document.body.classList.toggle('dark-mode');
+      localStorage.setItem('theme', document.body.classList.contains('dark-mode') ? 'dark' : 'light');
+    }
+
+    window.onload = function() {
+      if (localStorage.getItem('theme') === 'dark') {
+        document.body.classList.add('dark-mode');
+      }
+    }
+    
+   
+  </script>
+</body>
+</html>

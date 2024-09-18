@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background: linear-gradient(135deg, #e3f2fd, #bbdefb); /* Light blue gradient background */
+      font-family: 'Arial', sans-serif;
+    }
+    .login-container {
+      background-color: #ffffff; /* White background for the container */
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      width: 100%;
+      max-width: 400px;
+      text-align: center;
+      border: 1px solid #e0e0e0; /* Light grey border */
+    }
+    .login-container h2 {
+      color: #0288d1; /* Blue color */
+      margin-bottom: 30px;
+      font-size: 28px;
+      font-weight: bold;
+    }
+    .login-container input, .login-container select {
+      width: calc(100% - 20px);
+      padding: 14px;
+      margin-bottom: 20px;
+      border: 1px solid #b0bec5; /* Light grey border */
+      border-radius: 10px;
+      font-size: 16px;
+      transition: border-color 0.3s, box-shadow 0.3s;
+    }
+    .login-container input:focus, .login-container select:focus {
+      border-color: #0288d1; /* Blue border on focus */
+      outline: none;
+      box-shadow: 0 0 6px rgba(2, 136, 209, 0.5); /* Blue shadow on focus */
+    }
+    .login-container button {
+      background-color: #0288d1; /* Blue color */
+      color: white;
+      border: none;
+      padding: 14px 30px;
+      border-radius: 10px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+      font-weight: bold;
+    }
+    .login-container button:hover {
+      background-color: #0277bd; /* Darker blue color on hover */
+      transform: scale(1.05); /* Slightly enlarge on hover */
+    }
+    .login-container button:focus {
+      outline: none;
+      box-shadow: 0 0 8px rgba(2, 136, 209, 0.6); /* More pronounced blue shadow on focus */
+    }
+    .login-container .error-message {
+      color: #d32f2f; /* Red color for errors */
+      margin-top: 10px;
+      font-size: 14px;
+    }
+    .login-container a {
+      color: #0288d1; /* Blue color for links */
+      text-decoration: none;
+      font-size: 14px;
+      display: block;
+      margin-top: 10px;
+      transition: color 0.3s;
+    }
+    .login-container a:hover {
+      color: #0277bd; /* Darker blue color on hover */
+      text-decoration: underline;
+    }
+    /* Additional styles for responsiveness */
+    @media (max-width: 480px) {
+      .login-container {
+        padding: 20px;
+      }
+      .login-container h2 {
+        font-size: 24px;
+      }
+      .login-container input, .login-container select, .login-container button {
+        font-size: 14px;
+      }
+    }
+  </style>
+  <script>
+    async function handleLogin(event) {
+      event.preventDefault();
+      const email = document.getElementById('email').value;
+      const password = document.getElementById('password').value;
+      const accountType = document.getElementById('account-type').value;
+      try {
+        const response = await fetch('/api/login', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ email, password, accountType })
+        });
+        const data = await response.json();
+        if (data.success) {
+          window.location.href = '/dashboard';
+        } else {
+          document.querySelector('.error-message').textContent = 'Login failed. Please check your credentials.';
+        }
+      } catch (error) {
+        document.querySelector('.error-message').textContent = 'An error occurred. Please try again.';
+        console.error('Login failed', error);
+      }
+    }
+
+    // Automatically fill the form with given credentials
+    window.onload = function() {
+      document.getElementById('email').value = 'harini@gmail.com';
+      document.getElementById('password').value = 'harini';
+    };
+  </script>
+</head>
+<body>
+  <div class="login-container">
+    <h2>Login</h2>
+    <form onsubmit="handleLogin(event)">
+      <select id="account-type" class="form-select" required>
+        <option value="" disabled selected>Select Account Type</option>
+        <option value="patient">Patient</option>
+        <option value="doctor">Doctor</option>
+        <option value="test">Test Account</option>
+        <option value="medical-shop">Medical Shop</option>
+      </select>
+      <input type="email" id="email" placeholder="Email" required />
+      <input type="password" id="password" placeholder="Password" required />
+      <button type="submit">Login</button>
+      <div class="error-message"></div> <!-- For displaying error messages -->
+      <a href="#">Forgot your password?</a> <!-- Additional link for password recovery -->
+    </form>
+  </div>
+</body>
+</html>

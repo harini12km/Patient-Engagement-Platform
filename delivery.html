@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medicine Delivery Shopping</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            background-color: #007bff;
+            padding: 20px;
+            color: white;
+            align-items: center;
+        }
+        .header select, .header input {
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+        }
+        .header input {
+            width: 300px;
+        }
+        .cart {
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            position: relative;
+            cursor: pointer;
+        }
+        .cart .count {
+            background-color: red;
+            color: white;
+            border-radius: 50%;
+            padding: 5px;
+            position: absolute;
+            top: -5px;
+            right: -5px;
+        }
+        .products-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+        .product-card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 15px;
+            padding: 20px;
+            width: 220px;
+            text-align: center;
+        }
+        .product-card img {
+            width: 100px;
+            height: 100px;
+        }
+        .product-card h3 {
+            font-size: 1.1rem;
+            margin: 10px 0;
+        }
+        .product-card p {
+            color: #555;
+        }
+        .product-card .price {
+            font-size: 1.2rem;
+            color: #007bff;
+        }
+        .product-card .mrp {
+            text-decoration: line-through;
+            color: #999;
+        }
+        .product-card button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+        }
+        .cart-container {
+            padding: 20px;
+            background-color: #fff;
+            margin: 20px auto;
+            max-width: 600px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .cart-container h3 {
+            margin-bottom: 20px;
+        }
+        .cart-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .cart-item button {
+            background-color: red;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <div>
+            <select>
+                <option>Bengaluru 560029</option>
+                <option>Mumbai 400001</option>
+                <option>Delhi 110001</option>
+                <option>Kolkata 700001</option>
+                <option>Chennai 600001</option>
+                <option>Hyderabad 500001</option>
+                <option>Pune 411001</option>
+                <option>Ahmedabad 380001</option>
+            </select>
+        </div>
+        <div>
+            <input type="text" placeholder="Search Medicines">
+        </div>
+        <div class="cart">
+            🛒 Cart <span class="count">0</span>
+        </div>
+    </div>
+    <div class="products-container">
+        <div class="product-card" data-name="PARACETAMOL 500mg" data-price="1599.2">
+            <img src="C:\Users\Naresh\OneDrive\Documents\Web\11.jpeg" alt="Paracetamol">
+            <h3>PARACETAMOL - 500mg</h3>
+            <p class="mrp">MRP ₹1999</p>
+            <p class="price">₹1599.2</p>
+            <button>Add to Cart</button>
+        </div>
+ 
+        <div class="product-card" data-name="DENVER HAMILTON DEO" data-price="228">
+            <img src="C:\Users\Naresh\OneDrive\Documents\Web\12.jpeg" alt="Denver Deo">
+            <h3>DENVER HAMILTON DEO BODY SPRAY</h3>
+            <p class="mrp">MRP ₹285</p>
+            <p class="price">₹228</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product-card" data-name="OMNIGEL GEL 75GM" data-price="203.2">
+            <img src="C:\Users\Naresh\OneDrive\Documents\Web\13.jpeg" alt="Omnigel 75gm">
+            <h3>OMNIGEL GEL 75GM</h3>
+            <p class="mrp">MRP ₹254</p>
+            <p class="price">₹203.2</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product-card" data-name="JUMPER PULSE OXYMETERS" data-price="2000">
+            <img src="C:\Users\Naresh\OneDrive\Documents\Web\14.jpeg" alt="Oximeter">
+            <h3>JUMPER PULSE OXYMETERS - 1 Unit</h3>
+            <p class="mrp">MRP ₹2500</p>
+            <p class="price">₹2000</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product-card" data-name="CROCIN ADVANCE 500MG" data-price="30">
+            <img src="C:\Users\Naresh\OneDrive\Documents\Web\15.jpeg" alt="Crocin Advance">
+            <h3>CROCIN ADVANCE 500MG - 10 Tablets</h3>
+            <p class="mrp">MRP ₹40</p>
+            <p class="price">₹30</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product-card" data-name="AMOXICILLIN 500mg" data-price="25">
+            <img src="C:\Users\Naresh\OneDrive\Documents\Web\16.jpeg" alt="AMOXICILLIN">
+            <h3>AMOXICILLIN 500MG - 10 Tablets</h3>
+            <p class="mrp">MRP ₹35</p>
+            <p class="price">₹25</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product-card" data-name="VICKS VAPORUB 50GM" data-price="75">
+            <img src="C:\Users\Naresh\OneDrive\Documents\Web\17.jpeg" alt="Vicks Vaporub">
+            <h3>VICKS VAPORUB - 50GM</h3>
+            <p class="mrp">MRP ₹100</p>
+            <p class="price">₹75</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product-card" data-name="DIGENE GEL 200ML" data-price="90">
+            <img src="C:\Users\Naresh\OneDrive\Documents\Web\18.jpeg" alt="Digene Gel">
+            <h3>DIGENE GEL - 200ML</h3>
+            <p class="mrp">MRP ₹120</p>
+            <p class="price">₹90</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product-card" data-name="OMNIGEL GEL 75GM" data-price="203.2">
+            <img src="C:\Users\Naresh\OneDrive\Documents\Web\13.jpeg" alt="Omnigel 75gm">
+            <h3>OMNIGEL GEL 75GM</h3>
+            <p class="mrp">MRP ₹254</p>
+            <p class="price">₹203.2</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="products-container">
+        <div class="product-card" data-name="PARACETAMOL 500mg" data-price="1599.2">
+            <img src="C:\Users\Naresh\OneDrive\Documents\Web\11.jpeg" alt="Paracetamol">
+            <h3>PARACETAMOL - 500mg</h3>
+            <p class="mrp">MRP ₹1999</p>
+            <p class="price">₹1599.2</p>
+            <button>Add to Cart</button>
+        </div>
+    </div>
+
+
+    <div class="cart-container" id="cart-container" style="display:none;">
+        <h3>Your Cart</h3>
+        <div id="cart-items"></div>
+        <h4>Total: ₹<span id="total-price">0</span></h4>
+    </div>
+
+    <script>
+
+        let cart = [];
+        const cartCount = document.querySelector('.cart .count');
+        const cartContainer = document.getElementById('cart-container');
+        const cartItemsContainer = document.getElementById('cart-items');
+        const totalPriceElement = document.getElementById('total-price');
+
+        const productButtons = document.querySelectorAll('.product-card button');
+        productButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const productCard = button.parentElement;
+                const name = productCard.getAttribute('data-name');
+                const price = parseFloat(productCard.getAttribute('data-price'));
+
+
+                cart.push({ name, price });
+                updateCart();
+            });
+        });
+
+        function updateCart() {
+            cartCount.innerText = cart.length;
+
+
+            cartContainer.style.display = cart.length > 0 ? 'block' : 'none';
+
+    
+            cartItemsContainer.innerHTML = '';
+
+            let totalPrice = 0;
+            cart.forEach((item, index) => {
+                const cartItem = document.createElement('div');
+                cartItem.classList.add('cart-item');
+                cartItem.innerHTML = `
+                    <span>${item.name} - ₹${item.price}</span>
+                    <button onclick="removeItem(${index})">Remove</button>
+                `;
+                cartItemsContainer.appendChild(cartItem);
+                totalPrice += item.price;
+            });
+
+
+            totalPriceElement.innerText = totalPrice.toFixed(2);
+        }
+
+        function removeItem(index) {
+            cart.splice(index, 1);
+            updateCart();
+        }
+    </script>
+</body>
+</html>

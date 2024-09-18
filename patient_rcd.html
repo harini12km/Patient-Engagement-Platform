@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Records</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+            margin: 20px 0;
+        }
+        .search-container {
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+            border-bottom: 1px solid #ddd;
+            position: relative;
+        }
+        .back-btn {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background-color: #007bff;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+        .back-btn:hover {
+            background-color: #0056b3;
+        }
+        input[type="text"] {
+            padding: 10px;
+            width: 100%;
+            max-width: 1000px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            font-size: 16px;
+            margin: 0 auto;
+            display: block;
+        }
+        .table-container {
+            flex: 1;
+            overflow-y: auto;
+            padding: 20px;
+            background-color: #fff;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+            cursor: pointer;
+        }
+        th.sortable:hover {
+            background-color: #ddd;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="search-container">
+        <a href="javascript:history.back()" class="back-btn">Back</a>
+        <input type="text" id="search" placeholder="Search records...">
+    </div>
+
+    <h1>Patient Records</h1>
+
+    <div class="table-container">
+        <table id="patient-table">
+            <thead>
+                <tr>
+                    <th class="sortable" onclick="sortTable(0)">Patient ID</th>
+                    <th class="sortable" onclick="sortTable(1)">Name</th>
+                    <th class="sortable" onclick="sortTable(2)">Age</th>
+                    <th class="sortable" onclick="sortTable(3)">Gender</th>
+                    <th class="sortable" onclick="sortTable(4)">Condition</th>
+                    <th class="sortable" onclick="sortTable(5)">Medications</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>001</td>
+                    <td>Vivinivesh</td>
+                    <td>19</td>
+                    <td>Male</td>
+                    <td>Hypertension</td>
+                    <td>Amlodipine, Lisinopril</td>
+                </tr>
+                <tr>
+                    <td>002</td>
+                    <td>Sharon</td>
+                    <td>30</td>
+                    <td>Male</td>
+                    <td>Diabetes</td>
+                    <td>Metformin, Insulin</td>
+                </tr>
+                <tr>
+                    <td>003</td>
+                    <td>Hariharan</td>
+                    <td>50</td>
+                    <td>Male</td>
+                    <td>Asthma</td>
+                    <td>Albuterol, Fluticasone</td>
+                </tr>
+                <tr>
+                    <td>004</td>
+                    <td>Anisha</td>
+                    <td>60</td>
+                    <td>Female</td>
+                    <td>Arthritis</td>
+                    <td>Ibuprofen, Methotrexate</td>
+                </tr>
+                <tr>
+                    <td>005</td>
+                    <td>Mohammad hassan</td>
+                    <td>45</td>
+                    <td>Male</td>
+                    <td>Insomnia</td>
+                    <td>Melatonin, Zolpidem</td>
+                </tr>
+                <tr>
+                    <td>006</td>
+                    <td>Yazhan</td>
+                    <td>35</td>
+                    <td>Male</td>
+                    <td>Gastroesophageal Reflux Disease (GERD)</td>
+                    <td>Omeprazole</td>
+                </tr>
+                <tr>
+                    <td>007</td>
+                    <td>Shiny roslin</td>
+                    <td>34</td>
+                    <td>Female</td>
+                    <td>Anxiety Disorders</td>
+                    <td>Diazepam,Escitalopram</td>
+                </tr>
+                <tr>
+                    <td>008</td>
+                    <td>Shibani</td>
+                    <td>56</td>
+                    <td>Female</td>
+                    <td>Depression</td>
+                    <td>Venlafaxine,Sertraline</td>
+                </tr>
+                <tr>
+                    <td>009</td>
+                    <td>Shraddha</td>
+                    <td>23</td>
+                    <td>Female</td>
+                    <td>Heart Disease</td>
+                    <td>Atorvastatin</td>
+                </tr>
+                <tr>
+                    <td>010</td>
+                    <td>Joshna</td>
+                    <td>48</td>
+                    <td>Female</td>
+                    <td>Chronic Obstructive Pulmonary Disease (COPD)</td>
+                    <td>Amlodipine, Lisinopril</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+        document.getElementById('search').addEventListener('input', function(event) {
+            const query = event.target.value.toLowerCase();
+            const rows = document.querySelectorAll('#patient-table tbody tr');
+            rows.forEach(row => {
+                const cells = row.getElementsByTagName('td');
+                let visible = false;
+                for (let i = 0; i < cells.length; i++) {
+                    if (cells[i].textContent.toLowerCase().includes(query)) {
+                        visible = true;
+                        break;
+                    }
+                }
+                row.style.display = visible ? '' : 'none';
+            });
+        });
+        function sortTable(columnIndex) {
+            const table = document.getElementById('patient-table');
+            const rows = Array.from(table.querySelectorAll('tbody tr'));
+            const isAscending = table.querySelectorAll('thead th')[columnIndex].classList.toggle('asc');
+
+            rows.sort((a, b) => {
+                const cellA = a.children[columnIndex].textContent.trim();
+                const cellB = b.children[columnIndex].textContent.trim();
+                return isAscending 
+                    ? cellA.localeCompare(cellB, undefined, {numeric: true}) 
+                    : cellB.localeCompare(cellA, undefined, {numeric: true});
+            });
+
+            const tbody = table.querySelector('tbody');
+            rows.forEach(row => tbody.appendChild(row));
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Medication Reminders</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background: #f5f5f5;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      height: 100%;
+      position: relative;
+      width: 100%;
+    }
+    .back-btn {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      background-color: #0277bd;
+      color: white;
+      padding: 8px 16px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 16px;
+    }
+    .back-btn:hover {
+      background-color: #01579b;
+    }
+    .reminders-container {
+      background-color: #ffffff; 
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      width: 100%;
+      max-width: 1200px; 
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      margin: auto;
+      position: relative;
+      top: 50px; /* Adjust top margin to account for the back button */
+    }
+    .reminders-container h2 {
+      color: #0277bd; 
+      margin-bottom: 20px;
+      font-size: 32px;
+      font-weight: bold;
+      text-align: center;
+    }
+    .reminders-list, .tomorrow-reminders {
+      flex: 1;
+    }
+    .reminders-list ul, .tomorrow-reminders ul {
+      list-style: none;
+      padding: 0;
+    }
+    .reminders-list ul li, .tomorrow-reminders ul li {
+      background-color: #e3f2fd; 
+      border: 1px solid #b3e5fc;
+      padding: 15px;
+      margin: 10px 0;
+      border-radius: 8px;
+      color: #0277bd; 
+      font-size: 18px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .reminders-list ul li:hover, .tomorrow-reminders ul li:hover {
+      background-color: #bbdefb; 
+    }
+    .tomorrow-reminders {
+      border-radius: 12px;
+      padding: 15px;
+    }
+    .tomorrow-reminders h3 {
+      color: #0277bd;
+      margin-top: 0;
+      font-size: 28px;
+    }
+    @media (max-width: 768px) {
+      .reminders-container {
+        flex-direction: column;
+        max-width: 100%;
+        gap: 10px;
+      }
+      .reminders-list, .tomorrow-reminders {
+        flex: none;
+        width: 100%;
+      }
+      .reminders-container h2 {
+        font-size: 28px;
+      }
+      .reminders-list ul li, .tomorrow-reminders ul li {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <a href="javascript:history.back()" class="back-btn">Back</a>
+
+  <div class="reminders-container">
+    <div class="reminders-list">
+      <h2>Medication Reminders</h2>
+      <ul>
+        <li>Aspirin - 8:00 AM</li>
+        <li>Ibuprofen - 12:00 PM</li>
+        <li>Metformin - 6:00 PM</li>
+        <li>Vitamin D - 9:00 PM</li>
+      </ul>
+    </div>
+    <div class="tomorrow-reminders">
+      <h3>Tomorrow's Reminders</h3>
+      <ul>
+        <li>Hydrochlorothiazide - 8:00 AM</li>
+        <li>Prednisone - 1:00 PM</li>
+        <li>Levothyroxine - 7:00 PM</li>
+        <li>Omega-3 - 9:00 PM</li>
+      </ul>
+    </div>
+  </div>
+
+</body>
+</html>

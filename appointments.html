@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Doctor Appointment Scheduling</title>
+  <style>
+    /* Existing CSS */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body, html {
+      height: 100%;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f9;
+    }
+    .calendar {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      height: 100vh;
+      padding: 20px;
+      background-color: #fff;
+    }
+    .calendar-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px;
+      background-color: #007BFF;
+      color: white;
+      position: relative;
+    }
+    .calendar-header h2 {
+      margin: 0;
+      font-size: 1.8rem;
+    }
+    .calendar-header button {
+      padding: 10px 20px;
+      background-color: white;
+      color: #007BFF;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+    .calendar-header input[type="date"] {
+      padding: 8px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+    }
+    .header-button {
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      padding: 10px 20px;
+      background-color: #fff;
+      color: #007BFF;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+    .header-button:hover {
+      background-color: #e0e0e0;
+    }
+    .schedule {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr); /* 1 column for times, 5 for days */
+      gap: 10px;
+      padding: 15px;
+      flex-grow: 1;
+      overflow-y: auto;
+    }
+    .time-label, .day-header {
+      background-color: #f1f1f1;
+      text-align: center;
+      font-weight: bold;
+      padding: 10px;
+      border: 1px solid #ddd;
+    }
+    .timeslot {
+      background-color: #f9f9f9;
+      padding: 20px;
+      text-align: center;
+      border: 1px solid #ddd;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: background-color 0.3s ease;
+    }
+    .timeslot.available {
+      background-color: #28a745;
+      color: white;
+    }
+    .timeslot.booked {
+      background-color: #dc3545;
+      color: white;
+      cursor: not-allowed;
+    }
+    .timeslot:hover {
+      opacity: 0.9;
+    }
+    .form-popup {
+      display: none;
+      position: fixed;
+      z-index: 9;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+    .form-container {
+      background-color: white;
+      margin: 10% auto;
+      padding: 30px;
+      border: 1px solid #888;
+      width: 400px;
+      border-radius: 8px;
+    }
+    .form-container h3 {
+      margin-top: 0;
+      font-size: 1.5rem;
+    }
+    .form-container input {
+      width: 100%;
+      padding: 15px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+    .form-container button {
+      width: 100%;
+      padding: 15px;
+      background-color: #28a745;
+      border: none;
+      color: white;
+      cursor: pointer;
+      border-radius: 5px;
+      margin-top: 15px;
+      font-size: 1rem;
+    }
+    .form-container button.close {
+      background-color: #dc3545;
+    }
+  </style>
+</head>
+<body>
+
+<div class="calendar">
+  <div class="calendar-header">
+    <button id="back-button" class="header-button">Back</button>
+    <h2>           doct Appointment Scheduling</h2>
+    <div>
+      <input type="date" id="date-picker" />
+      <button id="prev-week">Previous Week</button>
+      <button id="next-week">Next Week</button>
+    </div>
+  </div>
+  <div class="schedule">
+    <div class="time-label">Time</div>
+    <div class="day-header">Mon 8/12</div>
+    <div class="day-header">Tue 8/13</div>
+    <div class="day-header">Wed 8/14</div>
+    <div class="day-header">Thu 8/15</div>
+    <div class="day-header">Fri 8/16</div>
+
+    <div class="time-label">9:00 AM</div>
+    <div class="timeslot available" data-time="9:00 AM">Dr. Rishi (Available)</div>
+    <div class="timeslot available" data-time="9:00 AM">Dr. Abinaya vasu (Available)</div>
+    <div class="timeslot booked" data-time="9:00 AM">Dr. Harish (Booked)</div>
+    <div class="timeslot available" data-time="9:00 AM">Dr. Kavin (Available)</div>
+    <div class="timeslot booked" data-time="9:00 AM">Dr. Karthika (Booked)</div>
+
+    <div class="time-label">10:00 AM</div>
+    <div class="timeslot booked" data-time="10:00 AM">Dr. Kishen (Booked)</div>
+    <div class="timeslot available" data-time="10:00 AM">Dr. Aditi Jain (Available)</div>
+    <div class="timeslot available" data-time="10:00 AM">Dr. Pallavi (Available)</div>
+    <div class="timeslot available" data-time="10:00 AM">Dr. Kishore (Available)</div>
+    <div class="timeslot booked" data-time="10:00 AM">Dr. Ridhya dharshini (Booked)</div>
+
+    <div class="time-label">11:00 AM</div>
+    <div class="timeslot available" data-time="11:00 AM">Dr. Sivakami (Available)</div>
+    <div class="timeslot booked" data-time="11:00 AM">Dr. Naveen (Booked)</div>
+    <div class="timeslot available" data-time="11:00 AM">Dr. Aditya (Available)</div>
+    <div class="timeslot available" data-time="11:00 AM">Dr. Praveen (Available)</div>
+    <div class="timeslot booked" data-time="11:00 AM">Dr. Janvi (Booked)</div>
+  </div>
+</div>
+
+<div class="form-popup" id="appointmentForm">
+  <div class="form-container">
+    <h3>Confirm Appointment</h3>
+    <label for="name">Your Name</label>
+    <input type="text" id="name" placeholder="Enter your name" required>
+    
+    <label for="phone">Phone Number</label>
+    <input type="tel" id="phone" placeholder="Enter your phone number" required>
+    
+    <label for="details">Appointment Details</label>
+    <input type="text" id="details" placeholder="Appointment reason" required>
+    
+    <button type="submit" id="confirm-appointment">Confirm</button>
+    <button type="button" class="close" id="closeForm">Close</button>
+  </div>
+</div>
+
+<script>
+  const availableSlots = document.querySelectorAll('.timeslot.available');
+  const formPopup = document.getElementById('appointmentForm');
+  const closeFormButton = document.getElementById('closeForm');
+  const confirmButton = document.getElementById('confirm-appointment');
+  
+  availableSlots.forEach(slot => {
+    slot.addEventListener('click', function() {
+      formPopup.style.display = 'block';
+      document.getElementById('confirm-appointment').onclick = () => {
+        this.classList.remove('available');
+        this.classList.add('booked');
+        this.innerText = 'Booked';
+        formPopup.style.display = 'none';
+        alert(`Appointment confirmed for ${this.dataset.time}`);
+      };
+    });
+  });
+  
+  closeFormButton.addEventListener('click', () => {
+    formPopup.style.display = 'none';
+  });
+  
+  document.getElementById('next-week').addEventListener('click', () => {
+    alert("Loading next week schedule...");
+  });
+
+  document.getElementById('prev-week').addEventListener('click', () => {
+    alert("Loading previous week schedule...");
+  });
+
+  document.getElementById('back-button').addEventListener('click', () => {
+    alert("Going back to the previous page...");
+    // Add your navigation logic here
+  });
+</script>
+
+</body>
+</html>
