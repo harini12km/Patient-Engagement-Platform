@@ -1,0 +1,12 @@
+db.customers.insertMany([
+    { name: "Noah Carter", age: 33, gender: "Male", phoneNumber: "1234567893", address: { street: "1212 Main St", city: "Philadelphia", state: "PA", zip: "19102" }, email: "noah.carter@example.com" },
+    { name: "Mia Robinson", age: 27, gender: "Female", phoneNumber: "2345678904", address: { street: "2323 Second St", city: "San Antonio", state: "TX", zip: "78202" }, email: "mia.robinson@example.com" },
+    { name: "Aiden Parker", age: 41, gender: "Male", phoneNumber: "3456789015", address: { street: "3434 Third St", city: "San Diego", state: "CA", zip: "92102" }, email: "aiden.parker@example.com" },
+    { name: "Harper Brown", age: 30, gender: "Female", phoneNumber: "4567890126", address: { street: "4545 Fourth St", city: "Dallas", state: "TX", zip: "75202" }, email: "harper.brown@example.com" },
+    { name: "Ethan King", age: 38, gender: "Male", phoneNumber: "5678901237", address: { street: "5656 Fifth St", city: "Austin", state: "TX", zip: "73303" }, email: "ethan.king@example.com" },
+    { name: "Olivia Scott", age: 32, gender: "Female", phoneNumber: "6789012348", address: { street: "6767 Sixth St", city: "Columbus", state: "OH", zip: "43202" }, email: "olivia.scott@example.com" },
+    { name: "Liam Rodriguez", age: 29, gender: "Male", phoneNumber: "7890123459", address: { street: "7878 Seventh St", city: "San Francisco", state: "CA", zip: "94103" }, email: "liam.rodriguez@example.com" },
+    { name: "Ella Martinez", age: 35, gender: "Female", phoneNumber: "8901234560", address: { street: "8989 Eighth St", city: "Denver", state: "CO", zip: "80203" }, email: "ella.martinez@example.com" },
+    { name: "Jackson Allen", age: 37, gender: "Male", phoneNumber: "9012345671", address: { street: "9090 Ninth St", city: "Memphis", state: "TN", zip: "38102" }, email: "jackson.allen@example.com" },
+    { name: "Avery Evans", age: 31, gender: "Female", phoneNumber: "0123456782", address: { street: "1010 Tenth St", city: "Baltimore", state: "MD", zip: "21202" }, email: "avery.evans@example.com" }
+]);
