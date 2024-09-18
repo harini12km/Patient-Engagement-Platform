@@ -1,0 +1,12 @@
+db.appointments.insertMany([
+    { customerId: ObjectId("66e6dc3efe5423480cccd85a"), testId: ObjectId("66e6da35fe5423480cccd831"), appointmentDate: new Date("2023-10-25T09:00:00Z"), status: "Scheduled", notes: "Routine health check" },
+    { customerId: ObjectId("66e6dc3efe5423480cccd85b"), testId: ObjectId("66e6da35fe5423480cccd832"), appointmentDate: new Date("2023-10-26T11:00:00Z"), status: "Scheduled", notes: "Post-treatment review" },
+    { customerId: ObjectId("66e6dc3efe5423480cccd85c"), testId: ObjectId("66e6da35fe5423480cccd833"), appointmentDate: new Date("2023-10-27T14:00:00Z"), status: "Scheduled", notes: "Specialist consultation" },
+    { customerId: ObjectId("66e6dc3efe5423480cccd85d"), testId: ObjectId("66e6da35fe5423480cccd834"), appointmentDate: new Date("2023-10-28T10:00:00Z"), status: "Scheduled", notes: "Annual physical exam" },
+    { customerId: ObjectId("66e6dc3efe5423480cccd854"), testId: ObjectId("66e6da35fe5423480cccd835"), appointmentDate: new Date("2023-10-29T13:00:00Z"), status: "Scheduled", notes: "Pre-surgery consultation" },
+    { customerId: ObjectId("66e6dc3efe5423480cccd855"), testId: ObjectId("66e6da35fe5423480cccd836"), appointmentDate: new Date("2023-10-30T12:00:00Z"), status: "Scheduled", notes: "Routine check-up" },
+    { customerId: ObjectId("66e6dc3efe5423480cccd856"), testId: ObjectId("66e6da35fe5423480cccd837"), appointmentDate: new Date("2023-10-31T15:00:00Z"), status: "Scheduled", notes: "Diagnostic test follow-up" },
+    { customerId: ObjectId("66e6dc3efe5423480cccd857"), testId: ObjectId("66e6da35fe5423480cccd838"), appointmentDate: new Date("2023-11-01T08:00:00Z"), status: "Scheduled", notes: "Consultation for new symptoms" },
+    { customerId: ObjectId("66e6dc3efe5423480cccd858"), testId: ObjectId("66e6da35fe5423480cccd839"), appointmentDate: new Date("2023-11-02T14:00:00Z"), status: "Scheduled", notes: "Follow-up on treatment plan" },
+    { customerId: ObjectId("66e6dc3efe5423480cccd859"), testId: ObjectId("66e6da35fe5423480cccd83a"), appointmentDate: new Date("2023-11-03T09:30:00Z"), status: "Scheduled", notes: "Routine health review" }
+]);
