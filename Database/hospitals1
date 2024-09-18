@@ -1,0 +1,585 @@
+db.hospitals.insertMany([
+    {
+        name: "Mayo Clinic",
+        address: {
+            street: "13 200 First St SW",
+            city: "Rochester",
+            state: "MN",
+            zip: "55905"
+        },
+        phoneNumber: "+1-507-284-2511",
+        departments: ["Cardiology", "Neurology", "Surgery"]
+    },
+    {
+        name: "Cleveland Clinic",
+        address: {
+            street: "14 9500 Euclid Ave",
+            city: "Cleveland",
+            state: "OH",
+            zip: "44195"
+        },
+        phoneNumber: "+1-216-444-2200",
+        departments: ["Oncology", "Cardiology", "Internal Medicine"]
+    },
+    {
+        name: "Johns Hopkins Hospital",
+        address: {
+            street: "15 1800 Orleans St",
+            city: "Baltimore",
+            state: "MD",
+            zip: "21287"
+        },
+        phoneNumber: "+1-410-955-5000",
+        departments: ["Neurology", "Surgery", "Pediatrics"]
+    },
+    {
+        name: "Singapore General Hospital",
+        address: {
+            street: "16 Outram Rd",
+            city: "Singapore",
+            state: "SG",
+            zip: "169608"
+        },
+        phoneNumber: "+65-6222-3322",
+        departments: ["Internal Medicine", "Cardiology", "Orthopedics"]
+    },
+    {
+        name: "Royal Prince Alfred Hospital",
+        address: {
+            street: "17 Missenden Rd",
+            city: "Sydney",
+            state: "NSW",
+            zip: "2050"
+        },
+        phoneNumber: "+61-2-9515-6111",
+        departments: ["Emergency", "Gynecology", "Neurology"]
+    },
+    {
+        name: "Charité University Hospital",
+        address: {
+            street: "18 Charitéplatz 1",
+            city: "Berlin",
+            state: "Berlin",
+            zip: "10117"
+        },
+        phoneNumber: "+49-30-450-50",
+        departments: ["Pediatrics", "Internal Medicine", "Cardiology"]
+    },
+    {
+        name: "Hospitals of the University of Pennsylvania",
+        address: {
+            street: "19 3400 Spruce St",
+            city: "Philadelphia",
+            state: "PA",
+            zip: "19104"
+        },
+        phoneNumber: "+1-215-662-4000",
+        departments: ["Oncology", "Surgery", "Neurology"]
+    },
+    {
+        name: "Cedars-Sinai Medical Center",
+        address: {
+            street: "20 8700 Beverly Blvd",
+            city: "Los Angeles",
+            state: "CA",
+            zip: "90048"
+        },
+        phoneNumber: "+1-310-423-3277",
+        departments: ["Cardiology", "Oncology", "Surgery"]
+    },
+    {
+        name: "Royal Victoria Hospital",
+        address: {
+            street: "21 687 Pine Ave W",
+            city: "Montreal",
+            state: "QC",
+            zip: "H3A 1A1"
+        },
+        phoneNumber: "+1-514-843-1616",
+        departments: ["Emergency", "Pediatrics", "Internal Medicine"]
+    },
+    {
+        name: "Hospital das Clínicas de São Paulo",
+        address: {
+            street: "22 Avenida Doutor Enéas Carvalho de Aguiar",
+            city: "São Paulo",
+            state: "SP",
+            zip: "05403-000"
+        },
+        phoneNumber: "+55-11-2661-5000",
+        departments: ["Internal Medicine", "Surgery", "Cardiology"]
+    },
+    {
+        name: "Juntendo University Hospital",
+        address: {
+            street: "23 2-1-1 Hongo",
+            city: "Tokyo",
+            state: "Tokyo",
+            zip: "113-8421"
+        },
+        phoneNumber: "+81-3-3813-3111",
+        departments: ["Cardiology", "Neurology", "Orthopedics"]
+    },
+    {
+        name: "Hôpital Cochin",
+        address: {
+            street: "24 27 Rue du Faubourg Saint-Jacques",
+            city: "Paris",
+            state: "Île-de-France",
+            zip: "75014"
+        },
+        phoneNumber: "+33-1-58-41-41-41",
+        departments: ["Internal Medicine", "Pediatrics", "Oncology"]
+    },
+    {
+        name: "Hospital de Sant Pau",
+        address: {
+            street: "25 Carrer de Sant Antoni Maria Claret",
+            city: "Barcelona",
+            state: "Catalonia",
+            zip: "08025"
+        },
+        phoneNumber: "+34-93-553-7000",
+        departments: ["Cardiology", "Neurology", "Orthopedics"]
+    },
+    {
+        name: "The Royal Marsden Hospital",
+        address: {
+            street: "26 Fulham Rd",
+            city: "London",
+            state: "London",
+            zip: "SW3 6JJ"
+        },
+        phoneNumber: "+44-20-7352-8171",
+        departments: ["Oncology", "Radiology", "Surgery"]
+    },
+    {
+        name: "St. George's University Hospitals NHS Foundation Trust",
+        address: {
+            street: "27 Blackshaw Rd",
+            city: "London",
+            state: "London",
+            zip: "SW17 0QT"
+        },
+        phoneNumber: "+44-20-8672-1255",
+        departments: ["Emergency", "Internal Medicine", "Surgery"]
+    },
+    {
+        name: "Hospital de Clínicas 'Carlos Offeddu'",
+        address: {
+            street: "28 Avenida Corrientes",
+            city: "Buenos Aires",
+            state: "CABA",
+            zip: "1043"
+        },
+        phoneNumber: "+54-11-5950-8000",
+        departments: ["Gynecology", "Pediatrics", "Internal Medicine"]
+    },
+    {
+        name: "Hospital Universitario La Paz",
+        address: {
+            street: "29 Paseo de la Castellana",
+            city: "Madrid",
+            state: "Madrid",
+            zip: "28046"
+        },
+        phoneNumber: "+34-91-727-7000",
+        departments: ["Oncology", "Neurology", "Pediatrics"]
+    },
+    {
+        name: "Hospital Clínico San Carlos",
+        address: {
+            street: "30 Calle del Prof. Martín Lagos",
+            city: "Madrid",
+            state: "Madrid",
+            zip: "28040"
+        },
+        phoneNumber: "+34-91-330-5000",
+        departments: ["Emergency", "Cardiology", "Surgery"]
+    },
+    {
+        name: "Hong Kong Sanatorium & Hospital",
+        address: {
+            street: "31 2 Village Road",
+            city: "Hong Kong",
+            state: "HK",
+            zip: "102"
+        },
+        phoneNumber: "+852-2338-2323",
+        departments: ["Internal Medicine", "Surgery", "Oncology"]
+    },
+    {
+        name: "Klinikum der Universität München",
+        address: {
+            street: "32 Marchioninistraße 15",
+            city: "Munich",
+            state: "Bavaria",
+            zip: "81377"
+        },
+        phoneNumber: "+49-89-4400-0",
+        departments: ["Cardiology", "Neurology", "Pediatrics"]
+    },
+    {
+        name: "Hospital de la Princesa",
+        address: {
+            street: "33 Calle de Vallehermoso",
+            city: "Madrid",
+            state: "Madrid",
+            zip: "28015"
+        },
+        phoneNumber: "+34-91-549-3800",
+        departments: ["Oncology", "Gynecology", "Internal Medicine"]
+    },
+    {
+        name: "Mount Sinai Hospital",
+        address: {
+            street: "34 1468 Madison Ave",
+            city: "New York",
+            state: "NY",
+            zip: "10029"
+        },
+        phoneNumber: "+1-212-241-6500",
+        departments: ["Cardiology", "Neurology", "Surgery"]
+    },
+    {
+        name: "Hospital de Santa Maria",
+        address: {
+            street: "35 Avenida Miguel de Cervantes",
+            city: "Lisbon",
+            state: "Lisbon",
+            zip: "1000-167"
+        },
+        phoneNumber: "+351-21-795-5000",
+        departments: ["Internal Medicine", "Emergency", "Pediatrics"]
+    },
+    {
+        name: "Sheba Medical Center",
+        address: {
+            street: "36 24 Maccabim Street",
+            city: "Ramat Gan",
+            state: "Tel Aviv",
+            zip: "52621"
+        },
+        phoneNumber: "+972-3-530-3030",
+        departments: ["Cardiology", "Oncology", "Pediatrics"]
+    },
+    {
+        name: "Royal Melbourne Hospital",
+        address: {
+            street: "37 300 Grattan St",
+            city: "Melbourne",
+            state: "VIC",
+            zip: "3050"
+        },
+        phoneNumber: "+61-3-9342-7000",
+        departments: ["Internal Medicine", "Surgery", "Neurology"]
+    },
+    {
+        name: "Hôpital Européen Georges-Pompidou",
+        address: {
+            street: "38 20 Rue Leblanc",
+            city: "Paris",
+            state: "Île-de-France",
+            zip: "75015"
+        },
+        phoneNumber: "+33-1-56-09-20-00",
+        departments: ["Cardiology", "Internal Medicine", "Oncology"]
+    },
+    {
+        name: "Klinik Hirslanden",
+        address: {
+            street: "39 Witellikerstrasse",
+            city: "Zurich",
+            state: "Zurich",
+            zip: "8032"
+        },
+        phoneNumber: "+41-44-387-1111",
+        departments: ["Gynecology", "Cardiology", "Orthopedics"]
+    },
+    {
+        name: "Hospital Israelita Albert Einstein",
+        address: {
+            street: "40 Avenida Albert Einstein",
+            city: "São Paulo",
+            state: "SP",
+            zip: "05652-900"
+        },
+        phoneNumber: "+55-11-3747-9000",
+        departments: ["Cardiology", "Neurology", "Oncology"]
+    },
+    {
+        name: "Hospital Universitário São Francisco",
+        address: {
+            street: "41 Rua São Francisco",
+            city: "São Paulo",
+            state: "SP",
+            zip: "02331-000"
+        },
+        phoneNumber: "+55-11-3854-6000",
+        departments: ["Emergency", "Surgery", "Pediatrics"]
+    },
+    {
+        name: "Hospital das Clínicas de Ribeirão Preto",
+        address: {
+            street: "42 Avenida Bandeirantes",
+            city: "Ribeirão Preto",
+            state: "SP",
+            zip: "14049-900"
+        },
+        phoneNumber: "+55-16-3602-3000",
+        departments: ["Cardiology", "Internal Medicine", "Oncology"]
+    },
+    {
+        name: "Hospital Universitário de Brasília",
+        address: {
+            street: "43 SGAN 601 Bloco K",
+            city: "Brasília",
+            state: "DF",
+            zip: "70760-150"
+        },
+        phoneNumber: "+55-61-3325-1000",
+        departments: ["Pediatrics", "Internal Medicine", "Surgery"]
+    },
+    {
+        name: "Hospital de Cáncer de Barretos",
+        address: {
+            street: "44 Avenida dos Estudantes",
+            city: "Barretos",
+            state: "SP",
+            zip: "14784-400"
+        },
+        phoneNumber: "+55-17-3321-3000",
+        departments: ["Oncology", "Surgery", "Radiology"]
+    },
+    {
+        name: "Hospital de Clínicas de Curitiba",
+        address: {
+            street: "45 Rua General Carneiro",
+            city: "Curitiba",
+            state: "PR",
+            zip: "80060-150"
+        },
+        phoneNumber: "+55-41-3366-9000",
+        departments: ["Internal Medicine", "Pediatrics", "Cardiology"]
+    },
+    {
+        name: "Hospital de Santa Casa de Misericórdia",
+        address: {
+            street: "46 Rua Santa Casa",
+            city: "São Paulo",
+            state: "SP",
+            zip: "01236-000"
+        },
+        phoneNumber: "+55-11-3315-9333",
+        departments: ["Emergency", "Surgery", "Gynecology"]
+    },
+    {
+        name: "Hospital de Clínicas de Porto Alegre",
+        address: {
+            street: "47 Rua Otávio Francisco Caruso da Silva",
+            city: "Porto Alegre",
+            state: "RS",
+            zip: "90050-002"
+        },
+        phoneNumber: "+55-51-3359-8000",
+        departments: ["Cardiology", "Surgery", "Pediatrics"]
+    },
+    {
+        name: "Hospital de Santa Maria",
+        address: {
+            street: "48 Avenida Miguel de Cervantes",
+            city: "Lisbon",
+            state: "Lisbon",
+            zip: "1000-167"
+        },
+        phoneNumber: "+351-21-795-5000",
+        departments: ["Internal Medicine", "Emergency", "Pediatrics"]
+    },
+    {
+        name: "Hospital Universitário Pedro Ernesto",
+        address: {
+            street: "49 Rua Voluntários da Pátria",
+            city: "Rio de Janeiro",
+            state: "RJ",
+            zip: "22270-010"
+        },
+        phoneNumber: "+55-21-2268-8000",
+        departments: ["Emergency", "Internal Medicine", "Gynecology"]
+    },
+    {
+        name: "Hospital da Mulher",
+        address: {
+            street: "50 Rua Eduardo Santos",
+            city: "São Paulo",
+            state: "SP",
+            zip: "05725-000"
+        },
+        phoneNumber: "+55-11-3747-6000",
+        departments: ["Gynecology", "Pediatrics", "Internal Medicine"]
+    },
+    {
+        name: "Hospital Universitário São Francisco",
+        address: {
+            street: "51 Rua São Francisco",
+            city: "São Paulo",
+            state: "SP",
+            zip: "02331-000"
+        },
+        phoneNumber: "+55-11-3854-6000",
+        departments: ["Emergency", "Surgery", "Pediatrics"]
+    },
+    {
+        name: "Hospital das Clínicas de Ribeirão Preto",
+        address: {
+            street: "52 Avenida Bandeirantes",
+            city: "Ribeirão Preto",
+            state: "SP",
+            zip: "14049-900"
+        },
+        phoneNumber: "+55-16-3602-3000",
+        departments: ["Cardiology", "Internal Medicine", "Oncology"]
+    },
+    {
+        name: "Hospital de Cáncer de Barretos",
+        address: {
+            street: "53 Avenida dos Estudantes",
+            city: "Barretos",
+            state: "SP",
+            zip: "14784-400"
+        },
+        phoneNumber: "+55-17-3321-3000",
+        departments: ["Oncology", "Surgery", "Radiology"]
+    },
+    {
+        name: "Hospital de Clínicas de Curitiba",
+        address: {
+            street: "54 Rua General Carneiro",
+            city: "Curitiba",
+            state: "PR",
+            zip: "80060-150"
+        },
+        phoneNumber: "+55-41-3366-9000",
+        departments: ["Internal Medicine", "Pediatrics", "Cardiology"]
+    },
+    {
+        name: "Hospital da Mulher",
+        address: {
+            street: "55 Rua Eduardo Santos",
+            city: "São Paulo",
+            state: "SP",
+            zip: "05725-000"
+        },
+        phoneNumber: "+55-11-3747-6000",
+        departments: ["Gynecology", "Pediatrics", "Internal Medicine"]
+    },
+    {
+        name: "Hospital Universitário Pedro Ernesto",
+        address: {
+            street: "56 Rua Voluntários da Pátria",
+            city: "Rio de Janeiro",
+            state: "RJ",
+            zip: "22270-010"
+        },
+        phoneNumber: "+55-21-2268-8000",
+        departments: ["Emergency", "Internal Medicine", "Gynecology"]
+    },
+    {
+        name: "Hospital de São João",
+        address: {
+            street: "57 Rua Professor Jorge de Lima",
+            city: "Porto",
+            state: "Porto",
+            zip: "4200-319"
+        },
+        phoneNumber: "+351-22-201-9000",
+        departments: ["Internal Medicine", "Pediatrics", "Oncology"]
+    },
+    {
+        name: "Hospital de Braga",
+        address: {
+            street: "58 Avenida Central",
+            city: "Braga",
+            state: "Braga",
+            zip: "4710-297"
+        },
+        phoneNumber: "+351-253-205-000",
+        departments: ["Cardiology", "Surgery", "Emergency"]
+    },
+    {
+        name: "Hospital de São João",
+        address: {
+            street: "59 Rua Professor Jorge de Lima",
+            city: "Porto",
+            state: "Porto",
+            zip: "4200-319"
+        },
+        phoneNumber: "+351-22-201-9000",
+        departments: ["Internal Medicine", "Pediatrics", "Oncology"]
+    },
+    {
+        name: "Hospital de Braga",
+        address: {
+            street: "60 Avenida Central",
+            city: "Braga",
+            state: "Braga",
+            zip: "4710-297"
+        },
+        phoneNumber: "+351-253-205-000",
+        departments: ["Cardiology", "Surgery", "Emergency"]
+    },
+    {
+        name: "Hospital Universitário de Brasília",
+        address: {
+            street: "61 SGAN 601 Bloco K",
+            city: "Brasília",
+            state: "DF",
+            zip: "70760-150"
+        },
+        phoneNumber: "+55-61-3325-1000",
+        departments: ["Pediatrics", "Internal Medicine", "Surgery"]
+    },
+    {
+        name: "Hospital de Clínicas de Curitiba",
+        address: {
+            street: "62 Rua General Carneiro",
+            city: "Curitiba",
+            state: "PR",
+            zip: "80060-150"
+        },
+        phoneNumber: "+55-41-3366-9000",
+        departments: ["Internal Medicine", "Pediatrics", "Cardiology"]
+    },
+    {
+        name: "Hospital de Santa Casa de Misericórdia",
+        address: {
+            street: "63 Rua Santa Casa",
+            city: "São Paulo",
+            state: "SP",
+            zip: "01236-000"
+        },
+        phoneNumber: "+55-11-3315-9333",
+        departments: ["Emergency", "Surgery", "Gynecology"]
+    },
+    {
+        name: "Hospital de São João",
+        address: {
+            street: "64 Rua Professor Jorge de Lima",
+            city: "Porto",
+            state: "Porto",
+            zip: "4200-319"
+        },
+        phoneNumber: "+351-22-201-9000",
+        departments: ["Internal Medicine", "Pediatrics", "Oncology"]
+    },
+    {
+        name: "Hospital de Braga",
+        address: {
+            street: "65 Avenida Central",
+            city: "Braga",
+            state: "Braga",
+            zip: "4710-297"
+        },
+        phoneNumber: "+351-253-205-000",
+        departments: ["Cardiology", "Surgery", "Emergency"]
+    }
+]);
