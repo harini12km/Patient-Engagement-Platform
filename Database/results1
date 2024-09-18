@@ -1,0 +1,12 @@
+db.results.insertMany([
+    { appointmentId: ObjectId("66e6dd38fe5423480cccd85e"), resultDate: new Date("2023-10-23T10:00:00Z"), result: "Positive", notes: "High levels of concern detected" },
+    { appointmentId: ObjectId("66e6dd38fe5423480cccd85f"), resultDate: new Date("2023-10-24T11:00:00Z"), result: "Negative", notes: "Results are normal" },
+    { appointmentId: ObjectId("66e6dd38fe5423480cccd860"), resultDate: new Date("2023-10-25T12:00:00Z"), result: "Inconclusive", notes: "Results unclear, retest recommended" },
+    { appointmentId: ObjectId("66e6dd38fe5423480cccd861"), resultDate: new Date("2023-10-26T13:00:00Z"), result: "Positive", notes: "Abnormalities found, requires further analysis" },
+    { appointmentId: ObjectId("66e6dd38fe5423480cccd862"), resultDate: new Date("2023-10-27T14:00:00Z"), result: "Negative", notes: "No significant findings" },
+    { appointmentId: ObjectId("66e6dd38fe5423480cccd863"), resultDate: new Date("2023-10-28T09:00:00Z"), result: "Positive", notes: "Elevated levels, consult needed" },
+    { appointmentId: ObjectId("66e6dd38fe5423480cccd864"), resultDate: new Date("2023-10-29T10:00:00Z"), result: "Negative", notes: "Normal results observed" },
+    { appointmentId: ObjectId("66e6dd38fe5423480cccd865"), resultDate: new Date("2023-10-30T11:00:00Z"), result: "Inconclusive", notes: "Unclear results, additional tests advised" },
+    { appointmentId: ObjectId("66e6dd38fe5423480cccd866"), resultDate: new Date("2023-10-31T12:00:00Z"), result: "Positive", notes: "Significant findings, requires follow-up" },
+    { appointmentId: ObjectId("66e6dd38fe5423480cccd867"), resultDate: new Date("2023-11-01T13:00:00Z"), result: "Negative", notes: "No issues detected in results" }
+]);
