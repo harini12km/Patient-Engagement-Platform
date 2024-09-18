@@ -1,0 +1,12 @@
+db.bloodInventory.insertMany([
+   {
+      bloodType: "B+",
+      unitsAvailable: 8,
+      lastUpdated: new Date()
+   },
+   {
+      bloodType: "AB-",
+      unitsAvailable: 3,
+      lastUpdated: new Date()
+   }
+], { ordered: false }); 
