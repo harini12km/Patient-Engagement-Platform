@@ -1,0 +1,69 @@
+db.hospitals.updateMany(
+    {
+        _id: {
+            $in: [
+                ObjectId('66e6b843fe5423480cccd743'),
+                ObjectId('66e6b843fe5423480cccd744'),
+                ObjectId('66e6b843fe5423480cccd745'),
+                ObjectId('66e6b843fe5423480cccd746'),
+                ObjectId('66e6b843fe5423480cccd747'),
+                ObjectId('66e6b843fe5423480cccd748'),
+                ObjectId('66e6b843fe5423480cccd749'),
+                ObjectId('66e6b843fe5423480cccd74a'),
+                ObjectId('66e6b843fe5423480cccd74b'),
+                ObjectId('66e6b843fe5423480cccd74c'),
+                ObjectId('66e6b843fe5423480cccd74d'),
+                ObjectId('66e6b843fe5423480cccd74e'),
+                ObjectId('66e6b843fe5423480cccd74f'),
+                ObjectId('66e6b843fe5423480cccd750'),
+                ObjectId('66e6b843fe5423480cccd751'),
+                ObjectId('66e6b843fe5423480cccd752'),
+                ObjectId('66e6b843fe5423480cccd753'),
+                ObjectId('66e6b843fe5423480cccd754'),
+                ObjectId('66e6b843fe5423480cccd755'),
+                ObjectId('66e6b843fe5423480cccd756'),
+                ObjectId('66e6b843fe5423480cccd757'),
+                ObjectId('66e6b843fe5423480cccd758'),
+                ObjectId('66e6b843fe5423480cccd759'),
+                ObjectId('66e6b843fe5423480cccd75a'),
+                ObjectId('66e6b843fe5423480cccd75b'),
+                ObjectId('66e6b843fe5423480cccd75c'),
+                ObjectId('66e6b843fe5423480cccd75d'),
+                ObjectId('66e6b843fe5423480cccd75e'),
+                ObjectId('66e6b843fe5423480cccd75f'),
+                ObjectId('66e6b843fe5423480cccd760'),
+                ObjectId('66e6b843fe5423480cccd761'),
+                ObjectId('66e6b843fe5423480cccd762'),
+                ObjectId('66e6b843fe5423480cccd763'),
+                ObjectId('66e6b843fe5423480cccd764'),
+                ObjectId('66e6b843fe5423480cccd765'),
+                ObjectId('66e6b843fe5423480cccd766'),
+                ObjectId('66e6b843fe5423480cccd767'),
+                ObjectId('66e6b843fe5423480cccd768'),
+                ObjectId('66e6b843fe5423480cccd769'),
+                ObjectId('66e6b843fe5423480cccd76a'),
+                ObjectId('66e6b843fe5423480cccd76b'),
+                ObjectId('66e6b843fe5423480cccd76c'),
+                ObjectId('66e6b843fe5423480cccd76d'),
+                ObjectId('66e6b843fe5423480cccd76e'),
+                ObjectId('66e6b843fe5423480cccd76f'),
+                ObjectId('66e6b843fe5423480cccd770'),
+                ObjectId('66e6b843fe5423480cccd771'),
+                ObjectId('66e6b843fe5423480cccd772'),
+                ObjectId('66e6b843fe5423480cccd773'),
+                ObjectId('66e6b843fe5423480cccd774'),
+                ObjectId('66e6b843fe5423480cccd775'),
+                ObjectId('66e6b843fe5423480cccd776'),
+                ObjectId('66e6b843fe5423480cccd777')
+            ]
+        }
+    },
+    {
+        $set: {
+            timing: {
+                opening: "08:00 AM",
+                closing: "08:00 PM"
+            }
+        }
+    }
+);
