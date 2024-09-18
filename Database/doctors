@@ -1,0 +1,79 @@
+db.doctors.updateMany(
+    { _id: ObjectId('66e6ae24fe5423480cccd733') },
+    { $set: { timing: { opening: "08:00 AM", closing: "04:00 PM" } } }
+);
+
+db.doctors.updateMany(
+    { _id: ObjectId('66e6ae24fe5423480cccd734') },
+    { $set: { timing: { opening: "09:00 AM", closing: "05:00 PM" } } }
+);
+
+db.doctors.updateMany(
+    { _id: ObjectId('66e6ae24fe5423480cccd735') },
+    { $set: { timing: { opening: "07:00 AM", closing: "03:00 PM" } } }
+);
+
+db.doctors.updateMany(
+    { _id: ObjectId('66e6ae24fe5423480cccd736') },
+    { $set: { timing: { opening: "10:00 AM", closing: "06:00 PM" } } }
+);
+
+db.doctors.updateMany(
+    { _id: ObjectId('66e6ae24fe5423480cccd737') },
+    { $set: { timing: { opening: "08:30 AM", closing: "04:30 PM" } } }
+);
+
+db.doctors.updateMany(
+    { _id: ObjectId('66e6ae24fe5423480cccd738') },
+    { $set: { timing: { opening: "09:00 AM", closing: "05:00 PM" } } }
+);
+
+db.doctors.updateMany(
+    { _id: ObjectId('66e6ae24fe5423480cccd739') },
+    { $set: { timing: { opening: "07:30 AM", closing: "03:30 PM" } } }
+);
+
+db.doctors.updateMany(
+    { _id: ObjectId('66e6ae24fe5423480cccd73a') },
+    { $set: { timing: { opening: "08:00 AM", closing: "04:00 PM" } } }
+);
+
+db.doctors.updateMany(
+    { _id: ObjectId('66e6ae24fe5423480cccd73b') },
+    { $set: { timing: { opening: "09:00 AM", closing: "05:00 PM" } } }
+);
+
+db.doctors.updateMany(
+    { _id: ObjectId('66e6ae24fe5423480cccd73c') },
+    { $set: { timing: { opening: "08:00 AM", closing: "04:00 PM" } } }
+);
+
+db.doctors.updateMany(
+    { _id: ObjectId('66e6ae24fe5423480cccd73d') },
+    { $set: { timing: { opening: "09:30 AM", closing: "05:30 PM" } } }
+);
+
+db.doctors.updateMany(
+    { _id: ObjectId('66e6ae24fe5423480cccd73e') },
+    { $set: { timing: { opening: "10:00 AM", closing: "06:00 PM" } } }
+);
+
+db.doctors.updateMany(
+    { _id: ObjectId('66e6ae24fe5423480cccd73f') },
+    { $set: { timing: { opening: "07:00 AM", closing: "03:00 PM" } } }
+);
+
+db.doctors.updateMany(
+    { _id: ObjectId('66e6ae24fe5423480cccd740') },
+    { $set: { timing: { opening: "08:30 AM", closing: "04:30 PM" } } }
+);
+
+db.doctors.updateMany(
+    { _id: ObjectId('66e6ae24fe5423480cccd741') },
+    { $set: { timing: { opening: "09:00 AM", closing: "05:00 PM" } } }
+);
+
+db.doctors.updateMany(
+    { _id: ObjectId('66e6ae24fe5423480cccd742') },
+    { $set: { timing: { opening: "10:00 AM", closing: "06:00 PM" } } }
+);
