@@ -1,0 +1,12 @@
+db.customers.insertMany([
+    { name: "Lucas Scott", age: 27, gender: "Male", phoneNumber: "1234567892", address: { street: "1111 First St", city: "San Jose", state: "CA", zip: "95110" }, email: "lucas.scott@example.com" },
+    { name: "Emily Adams", age: 29, gender: "Female", phoneNumber: "2345678903", address: { street: "2222 Second St", city: "San Francisco", state: "CA", zip: "94102" }, email: "emily.adams@example.com" },
+    { name: "Benjamin Clark", age: 35, gender: "Male", phoneNumber: "3456789014", address: { street: "3333 Third St", city: "Seattle", state: "WA", zip: "98102" }, email: "benjamin.clark@example.com" },
+    { name: "Grace Wilson", age: 30, gender: "Female", phoneNumber: "4567890125", address: { street: "4444 Fourth St", city: "Denver", state: "CO", zip: "80202" }, email: "grace.wilson@example.com" },
+    { name: "William King", age: 41, gender: "Male", phoneNumber: "5678901236", address: { street: "5555 Fifth St", city: "Austin", state: "TX", zip: "73302" }, email: "william.king@example.com" },
+    { name: "Ava Taylor", age: 26, gender: "Female", phoneNumber: "6789012347", address: { street: "6666 Sixth St", city: "Jacksonville", state: "FL", zip: "32202" }, email: "ava.taylor@example.com" },
+    { name: "James Walker", age: 39, gender: "Male", phoneNumber: "7890123458", address: { street: "7777 Seventh St", city: "Columbus", state: "OH", zip: "43201" }, email: "james.walker@example.com" },
+    { name: "Charlotte Harris", age: 32, gender: "Female", phoneNumber: "8901234569", address: { street: "8888 Eighth St", city: "Fort Worth", state: "TX", zip: "76101" }, email: "charlotte.harris@example.com" },
+    { name: "Oliver Martin", age: 45, gender: "Male", phoneNumber: "9012345670", address: { street: "9999 Ninth St", city: "Nashville", state: "TN", zip: "37202" }, email: "oliver.martin@example.com" },
+    { name: "Lily Thompson", age: 28, gender: "Female", phoneNumber: "0123456781", address: { street: "1010 Tenth St", city: "Memphis", state: "TN", zip: "38101" }, email: "lily.thompson@example.com" }
+]);
