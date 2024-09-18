@@ -1,0 +1,149 @@
+db.deliveries.insertMany([
+    {
+        orderId: ObjectId("66e6c17cfe5423480cccd7e8"), // Reference to an order document
+        deliveryPerson: "John Smith",
+        deliveryDate: new Date("2023-10-04T10:00:00Z"),
+        status: "Delivered",
+        notes: "Delivered to the office lobby"
+    },
+    {
+        orderId: ObjectId("66e6c17cfe5423480cccd7e9"),
+        deliveryPerson: "Emily Davis",
+        deliveryDate: new Date("2023-10-05T11:00:00Z"),
+        status: "Shipped",
+        notes: "Delivery attempted but no one was home"
+    },
+    {
+        orderId: ObjectId("66e6c17cfe5423480cccd7ea"),
+        deliveryPerson: "Michael Brown",
+        deliveryDate: new Date("2023-10-06T12:00:00Z"),
+        status: "Processing",
+        notes: "In transit, expected to arrive tomorrow"
+    },
+    {
+        orderId: ObjectId("66e6c17cfe5423480cccd7eb"),
+        deliveryPerson: "Sarah Wilson",
+        deliveryDate: new Date("2023-10-07T13:00:00Z"),
+        status: "Delivered",
+        notes: "Left with a neighbor"
+    },
+    {
+        orderId: ObjectId("66e6c17cfe5423480cccd7ec"),
+        deliveryPerson: "David Lee",
+        deliveryDate: new Date("2023-10-08T14:00:00Z"),
+        status: "Shipped",
+        notes: "Delivery scheduled for tomorrow"
+    },
+    {
+        orderId: ObjectId("66e6c17cfe5423480cccd7ed"),
+        deliveryPerson: "Olivia Martinez",
+        deliveryDate: new Date("2023-10-09T15:00:00Z"),
+        status: "Processing",
+        notes: "Delayed due to weather conditions"
+    },
+    {
+        orderId: ObjectId("66e6c17cfe5423480cccd7ee"),
+        deliveryPerson: "Daniel Garcia",
+        deliveryDate: new Date("2023-10-10T16:00:00Z"),
+        status: "Delivered",
+        notes: "Delivered directly to the customer"
+    },
+    {
+        orderId: ObjectId("66e6c17cfe5423480cccd7ef"),
+        deliveryPerson: "Laura Wilson",
+        deliveryDate: new Date("2023-10-11T17:00:00Z"),
+        status: "Delivered",
+        notes: "Package left at the front door"
+    },
+    {
+        orderId: ObjectId("66e6c157fe5423480cccd7e0"),
+        deliveryPerson: "James Johnson",
+        deliveryDate: new Date("2023-10-12T18:00:00Z"),
+        status: "Shipped",
+        notes: "In transit, estimated delivery in 2 days"
+    },
+    {
+        orderId: ObjectId("66e6c157fe5423480cccd7e1"),
+        deliveryPerson: "Sophia Lee",
+        deliveryDate: new Date("2023-10-13T19:00:00Z"),
+        status: "Processing",
+        notes: "Awaiting pickup from warehouse"
+    },
+    {
+        orderId: ObjectId("66e6c157fe5423480cccd7e2"),
+        deliveryPerson: "Ethan Brown",
+        deliveryDate: new Date("2023-10-14T20:00:00Z"),
+        status: "Shipped",
+        notes: "Out for delivery"
+    },
+    {
+        orderId: ObjectId("66e6c157fe5423480cccd7e3"),
+        deliveryPerson: "Ava Martinez",
+        deliveryDate: new Date("2023-10-15T21:00:00Z"),
+        status: "Delivered",
+        notes: "Delivered to mailbox"
+    },
+    {
+        orderId: ObjectId("66e6c157fe5423480cccd7e4"),
+        deliveryPerson: "William Davis",
+        deliveryDate: new Date("2023-10-16T22:00:00Z"),
+        status: "Delivered",
+        notes: "Handed directly to customer"
+    },
+    {
+        orderId: ObjectId("66e6c157fe5423480cccd7e5"),
+        deliveryPerson: "Isabella Johnson",
+        deliveryDate: new Date("2023-10-17T23:00:00Z"),
+        status: "Processing",
+        notes: "Delivery scheduled for tomorrow"
+    },
+    {
+        orderId: ObjectId("66e6c157fe5423480cccd7e6"),
+        deliveryPerson: "Lucas Garcia",
+        deliveryDate: new Date("2023-10-18T10:00:00Z"),
+        status: "Shipped",
+        notes: "In transit, expected to arrive within 2 days"
+    },
+    {
+        orderId: ObjectId("66e6c157fe5423480cccd7e7"),
+        deliveryPerson: "Mia Wilson",
+        deliveryDate: new Date("2023-10-19T11:00:00Z"),
+        status: "Delivered",
+        notes: "Delivered to the front porch"
+    },
+    {
+        orderId: ObjectId("66e6c135fe5423480cccd7db"),
+        deliveryPerson: "Benjamin Brown",
+        deliveryDate: new Date("2023-10-20T12:00:00Z"),
+        status: "Processing",
+        notes: "Awaiting final confirmation"
+    },
+    {
+        orderId: ObjectId("66e6c135fe5423480cccd7dc"),
+        deliveryPerson: "Charlotte Davis",
+        deliveryDate: new Date("2023-10-21T13:00:00Z"),
+        status: "Delivered",
+        notes: "Left at side door"
+    },
+    {
+        orderId: ObjectId("66e6c135fe5423480cccd7dd"),
+        deliveryPerson: "Henry Garcia",
+        deliveryDate: new Date("2023-10-22T14:00:00Z"),
+        status: "Shipped",
+        notes: "In transit, will arrive within 2 days"
+    },
+    {
+        orderId: ObjectId("66e6c135fe5423480cccd7de"),
+        deliveryPerson: "Amelia Wilson",
+        deliveryDate: new Date("2023-10-23T15:00:00Z"),
+        status: "Delivered",
+        notes: "Delivered to the garage"
+    },
+    {
+        orderId: ObjectId("66e6c135fe5423480cccd7df"),
+        deliveryPerson: "Jacob Smith",
+        deliveryDate: new Date("2023-10-24T16:00:00Z"),
+        status: "Shipped",
+        notes: "On its way, estimated delivery in 2 days"
+    }
+]);
