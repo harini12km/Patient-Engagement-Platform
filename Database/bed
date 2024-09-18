@@ -1,0 +1,15 @@
+db.beds.insertMany([
+   {
+      bedNumber: "101",
+      ward: "General",
+      status: "Occupied",
+      lastCleaned: new Date(),
+      patientID: "P12345"
+   },
+   {
+      bedNumber: "102",
+      ward: "ICU",
+      status: "Available",
+      lastCleaned: new Date()
+   }
+]);
