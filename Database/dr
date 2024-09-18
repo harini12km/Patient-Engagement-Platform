@@ -1,0 +1,5 @@
+use dr
+db.updateUser("myDatabaseUser", {
+  pwd: "D1fficultP%40ssw0rd",
+  roles: [ { role: "readWrite", db: "dr" } ]
+});
