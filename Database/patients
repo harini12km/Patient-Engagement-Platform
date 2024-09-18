@@ -1,0 +1,299 @@
+db.patients.insertMany([
+    {
+        name: "Rahul Singh",
+        age: 45,
+        gender: "Male",
+        bloodGroup: "O-",
+        religion: "Sikhism",
+        caste: "General",
+        phoneNumber: "9123456786",
+        caretaker: {
+            name: "Karan Singh",
+            phoneNumber: "9876543214"
+        },
+        address: {
+            street: "505 Sector 17",
+            city: "Chandigarh",
+            state: "Punjab",
+            zip: "160017",
+            country: "India"
+        },
+        aadharDetails: "1234-5678-9006",
+        medicalHistory: ["heart disease"],
+        doctor: {
+            name: "Dr. Rajiv Mehta",
+            hospital: "Max Super Specialty Hospital"
+        }
+    },
+    {
+        name: "Priya Iyer",
+        age: 28,
+        gender: "Female",
+        bloodGroup: "A-",
+        religion: "Hinduism",
+        caste: "Brahmin",
+        phoneNumber: "9123456787",
+        caretaker: {
+            name: "Vivek Iyer",
+            phoneNumber: "9876543215"
+        },
+        address: {
+            street: "606 Marina Beach",
+            city: "Chennai",
+            state: "Tamil Nadu",
+            zip: "600002",
+            country: "India"
+        },
+        aadharDetails: "1234-5678-9007",
+        medicalHistory: ["migraine"],
+        doctor: {
+            name: "Dr. Arun Kumar",
+            hospital: "Apollo Hospitals"
+        }
+    },
+    {
+        name: "Aditya Rao",
+        age: 34,
+        gender: "Male",
+        bloodGroup: "AB+",
+        religion: "Hinduism",
+        caste: "General",
+        phoneNumber: "9123456788",
+        caretaker: {
+            name: "Ravi Rao",
+            phoneNumber: "9876543216"
+        },
+        address: {
+            street: "707 MG Road",
+            city: "Bangalore",
+            state: "Karnataka",
+            zip: "560001",
+            country: "India"
+        },
+        aadharDetails: "1234-5678-9008",
+        medicalHistory: ["diabetes", "hypertension"],
+        doctor: {
+            name: "Dr. Suresh Naik",
+            hospital: "Fortis Hospital"
+        }
+    },
+    {
+        name: "Neha Deshmukh",
+        age: 37,
+        gender: "Female",
+        bloodGroup: "O+",
+        religion: "Hinduism",
+        caste: "OBC",
+        phoneNumber: "9123456789",
+        caretaker: {
+            name: "Amit Deshmukh",
+            phoneNumber: "9876543217"
+        },
+        address: {
+            street: "808 Fergusson College Rd",
+            city: "Pune",
+            state: "Maharashtra",
+            zip: "411004",
+            country: "India"
+        },
+        aadharDetails: "1234-5678-9009",
+        medicalHistory: ["asthma"],
+        doctor: {
+            name: "Dr. Sunil Reddy",
+            hospital: "Ruby Hall Clinic"
+        }
+    },
+    {
+        name: "Riya Malhotra",
+        age: 30,
+        gender: "Female",
+        bloodGroup: "B+",
+        religion: "Christianity",
+        caste: "General",
+        phoneNumber: "9123456790",
+        caretaker: {
+            name: "Naina Malhotra",
+            phoneNumber: "9876543218"
+        },
+        address: {
+            street: "909 Connaught Place",
+            city: "New Delhi",
+            state: "Delhi",
+            zip: "110002",
+            country: "India"
+        },
+        aadharDetails: "1234-5678-9010",
+        medicalHistory: ["allergy"],
+        doctor: {
+            name: "Dr. Anil Kapoor",
+            hospital: "Sir Ganga Ram Hospital"
+        }
+    },
+    {
+        name: "Manoj Kumar",
+        age: 55,
+        gender: "Male",
+        bloodGroup: "A+",
+        religion: "Buddhism",
+        caste: "SC",
+        phoneNumber: "9123456791",
+        caretaker: {
+            name: "Suman Kumar",
+            phoneNumber: "9876543219"
+        },
+        address: {
+            street: "101 Janpath",
+            city: "Patna",
+            state: "Bihar",
+            zip: "800001",
+            country: "India"
+        },
+        aadharDetails: "1234-5678-9011",
+        medicalHistory: ["arthritis", "diabetes"],
+        doctor: {
+            name: "Dr. Harsh Patel",
+            hospital: "PMCH Patna"
+        }
+    },
+    {
+        name: "Sana Khan",
+        age: 25,
+        gender: "Female",
+        bloodGroup: "O+",
+        religion: "Islam",
+        caste: "General",
+        phoneNumber: "9123456792",
+        caretaker: {
+            name: "Imran Khan",
+            phoneNumber: "9876543220"
+        },
+        address: {
+            street: "22 Banjara Hills",
+            city: "Hyderabad",
+            state: "Telangana",
+            zip: "500034",
+            country: "India"
+        },
+        aadharDetails: "1234-5678-9012",
+        medicalHistory: ["migraine"],
+        doctor: {
+            name: "Dr. Sameer Khan",
+            hospital: "Care Hospitals"
+        }
+    },
+    {
+        name: "Arjun Reddy",
+        age: 39,
+        gender: "Male",
+        bloodGroup: "B-",
+        religion: "Hinduism",
+        caste: "General",
+        phoneNumber: "9123456793",
+        caretaker: {
+            name: "Suhas Reddy",
+            phoneNumber: "9876543221"
+        },
+        address: {
+            street: "23 Jubilee Hills",
+            city: "Hyderabad",
+            state: "Telangana",
+            zip: "500033",
+            country: "India"
+        },
+        aadharDetails: "1234-5678-9013",
+        medicalHistory: ["hypertension"],
+        doctor: {
+            name: "Dr. Ravi Kumar",
+            hospital: "Narayana Health"
+        }
+    },
+    {
+        name: "Sneha Nair",
+        age: 27,
+        gender: "Female",
+        bloodGroup: "A+",
+        religion: "Hinduism",
+        caste: "OBC",
+        phoneNumber: "9123456794",
+        caretaker: {
+            name: "Rakesh Nair",
+            phoneNumber: "9876543222"
+        },
+        address: {
+            street: "101 Marine Drive",
+            city: "Kochi",
+            state: "Kerala",
+            zip: "682001",
+            country: "India"
+        },
+        aadharDetails: "1234-5678-9014",
+        medicalHistory: ["allergy"],
+        doctor: {
+            name: "Dr. Kiran Reddy",
+            hospital: "Aster Medcity"
+        }
+    },
+    {
+        name: "Rajesh Khanna",
+        age: 44,
+        gender: "Male",
+        bloodGroup: "O+",
+        religion: "Hinduism",
+        caste: "General",
+        phoneNumber: "9123456795",
+        caretaker: {
+            name: "Sunita Khanna",
+            phoneNumber: "9876543223"
+        },
+        address: {
+            street: "55 CP Ramaswamy Road",
+            city: "Chennai",
+            state: "Tamil Nadu",
+            zip: "600028",
+            country: "India"
+        },
+        aadharDetails: "1234-5678-9015",
+        medicalHistory: ["diabetes", "hypertension"],
+        doctor: {
+            name: "Dr. Venkatesh Rao",
+            hospital: "Sankara Nethralaya"
+        }
+    },
+    {
+        name: "Shreya Ghosh",
+        age: 34,
+        gender: "Female",
+        bloodGroup: "B+",
+        religion: "Hinduism",
+        caste: "General",
+        phoneNumber: "9123456796",
+        caretaker: {
+            name: "Arpita Ghosh",
+            phoneNumber: "9876543224"
+        },
+        address: {
+            street: "45 Southern Avenue",
+            city: "Kolkata",
+            state: "West Bengal",
+            zip: "700029",
+            country: "India"
+        },
+        aadharDetails: "1234-5678-9016",
+        medicalHistory: ["thyroid"],
+        doctor: {
+            name: "Dr. Soumitra Bhattacharya",
+            hospital: "Apollo Gleneagles Hospital"
+        }
+    },
+    {
+        name: "Vikram Joshi",
+        age: 38,
+        gender: "Male",
+        bloodGroup: "A+",
+        religion: "Hinduism",
+        caste: "General",
+        phoneNumber: "9123456797",
+        caretaker: {
+            name: "Sandeep Joshi",
+            phoneNumber: "9876543225"
+        }};
