@@ -1,0 +1,107 @@
+db.messages.insertMany([
+    {
+        senderId: ObjectId("60c72b2f9b1d8b3a4c8b4567"), // Reference to a customer or provider document
+        receiverId: ObjectId("60c72b2f9b1d8b3a4c8b4568"), // Reference to a customer or provider document
+        message: "Your test results are ready.",
+        timestamp: new Date("2023-10-01T10:00:00Z"),
+        status: "Sent"
+    },
+    {
+        senderId: ObjectId("60c72b2f9b1d8b3a4c8b4568"),
+        receiverId: ObjectId("60c72b2f9b1d8b3a4c8b4567"),
+        message: "Appointment confirmed for October 5th at 2:00 PM.",
+        timestamp: new Date("2023-10-02T12:15:00Z"),
+        status: "Read"
+    },
+    {
+        senderId: ObjectId("60c72b2f9b1d8b3a4c8b4567"),
+        receiverId: ObjectId("60c72b2f9b1d8b3a4c8b4569"),
+        message: "Can I reschedule my appointment?",
+        timestamp: new Date("2023-10-03T14:20:00Z"),
+        status: "Delivered"
+    },
+    {
+        senderId: ObjectId("60c72b2f9b1d8b3a4c8b4570"),
+        receiverId: ObjectId("60c72b2f9b1d8b3a4c8b4567"),
+        message: "Your prescription is ready for pickup.",
+        timestamp: new Date("2023-10-04T09:30:00Z"),
+        status: "Read"
+    },
+    {
+        senderId: ObjectId("60c72b2f9b1d8b3a4c8b4571"),
+        receiverId: ObjectId("60c72b2f9b1d8b3a4c8b4569"),
+        message: "Doctor is running late. Please expect a delay of 15 minutes.",
+        timestamp: new Date("2023-10-05T11:45:00Z"),
+        status: "Sent"
+    },
+    {
+        senderId: ObjectId("60c72b2f9b1d8b3a4c8b4572"),
+        receiverId: ObjectId("60c72b2f9b1d8b3a4c8b4567"),
+        message: "Your appointment is canceled. Please contact the office for rescheduling.",
+        timestamp: new Date("2023-10-06T08:00:00Z"),
+        status: "Delivered"
+    },
+    {
+        senderId: ObjectId("60c72b2f9b1d8b3a4c8b4567"),
+        receiverId: ObjectId("60c72b2f9b1d8b3a4c8b4570"),
+        message: "I have a question about my recent test results.",
+        timestamp: new Date("2023-10-07T15:45:00Z"),
+        status: "Read"
+    },
+    {
+        senderId: ObjectId("60c72b2f9b1d8b3a4c8b4569"),
+        receiverId: ObjectId("60c72b2f9b1d8b3a4c8b4571"),
+        message: "Could you please send me a copy of my medical report?",
+        timestamp: new Date("2023-10-08T16:30:00Z"),
+        status: "Sent"
+    },
+    {
+        senderId: ObjectId("60c72b2f9b1d8b3a4c8b4568"),
+        receiverId: ObjectId("60c72b2f9b1d8b3a4c8b4572"),
+        message: "Your upcoming vaccination is scheduled for October 10th.",
+        timestamp: new Date("2023-10-09T10:00:00Z"),
+        status: "Delivered"
+    },
+    {
+        senderId: ObjectId("60c72b2f9b1d8b3a4c8b4567"),
+        receiverId: ObjectId("60c72b2f9b1d8b3a4c8b4570"),
+        message: "Thank you for the update, I'll come by tomorrow.",
+        timestamp: new Date("2023-10-09T12:15:00Z"),
+        status: "Read"
+    },
+    {
+        senderId: ObjectId("60c72b2f9b1d8b3a4c8b4568"),
+        receiverId: ObjectId("60c72b2f9b1d8b3a4c8b4567"),
+        message: "Your prescription has been refilled. Please pick it up at the pharmacy.",
+        timestamp: new Date("2023-10-10T09:00:00Z"),
+        status: "Sent"
+    },
+    {
+        senderId: ObjectId("60c72b2f9b1d8b3a4c8b4571"),
+        receiverId: ObjectId("60c72b2f9b1d8b3a4c8b4569"),
+        message: "Blood test results show everything is normal. No action needed.",
+        timestamp: new Date("2023-10-11T11:45:00Z"),
+        status: "Delivered"
+    },
+    {
+        senderId: ObjectId("60c72b2f9b1d8b3a4c8b4569"),
+        receiverId: ObjectId("60c72b2f9b1d8b3a4c8b4571"),
+        message: "Thank you! Please schedule my next appointment.",
+        timestamp: new Date("2023-10-12T13:20:00Z"),
+        status: "Read"
+    },
+    {
+        senderId: ObjectId("60c72b2f9b1d8b3a4c8b4570"),
+        receiverId: ObjectId("60c72b2f9b1d8b3a4c8b4567"),
+        message: "Reminder: Your follow-up is scheduled for October 15th.",
+        timestamp: new Date("2023-10-13T09:30:00Z"),
+        status: "Sent"
+    },
+    {
+        senderId: ObjectId("60c72b2f9b1d8b3a4c8b4572"),
+        receiverId: ObjectId("60c72b2f9b1d8b3a4c8b4567"),
+        message: "I need to cancel my appointment, please advise.",
+        timestamp: new Date("2023-10-14T14:50:00Z"),
+        status: "Delivered"
+    }
+]);
