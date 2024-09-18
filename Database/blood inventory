@@ -1,0 +1,29 @@
+// Insert documents
+db.bloodInventory.insertMany([
+   {
+      bloodType: "O+",
+      unitsAvailable: 10,
+      lastUpdated: new Date(),
+      source: "donation",
+      expirationDate: new Date(new Date().setFullYear(new Date().getFullYear() + 1)) // Set expiration date for one year later
+   },
+   {
+      bloodType: "A-",
+      unitsAvailable: 5,
+      lastUpdated: new Date(),
+      source: "donation",
+      expirationDate: new Date(new Date().setFullYear(new Date().getFullYear() + 1))
+   }
+]);
+
+// Query documents with conditions
+db.bloodInventory.find({
+   unitsAvailable: { $gte: 5 },
+   expirationDate: { $gt: new Date() }
+}).pretty();
+
+// Query documents with sorting
+db.bloodInventory.find().sort({ unitsAvailable: -1 }).pretty(); // Sort by unitsAvailable in descending order
+
+// Count documents
+db.bloodInventory.countDocuments({ bloodType: "O+" });
