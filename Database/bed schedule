@@ -1,0 +1,34 @@
+// Drop the existing collection
+db.beds.drop();
+
+// Recreate the collection with new options or schema
+db.createCollection("beds", {
+   validator: {
+      $jsonSchema: {
+         bsonType: "object",
+         required: [ "bedNumber", "ward", "status" ],
+         properties: {
+            bedNumber: {
+               bsonType: "string",
+               description: "must be a string and is required"
+            },
+            ward: {
+               bsonType: "string",
+               description: "must be a string and is required"
+            },
+            status: {
+               bsonType: "string",
+               description: "must be a string and is required"
+            },
+            lastCleaned: {
+               bsonType: "date",
+               description: "must be a date"
+            },
+            patientID: {
+               bsonType: "string",
+               description: "optional field to link to patient"
+            }
+         }
+      }
+   }
+});
