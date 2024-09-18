@@ -1,0 +1,100 @@
+db.messages.insertMany([
+    {
+        senderId: ObjectId("60c72b2f9b1d8b3a4c8b4573"),
+        receiverId: ObjectId("60c72b2f9b1d8b3a4c8b4567"),
+        message: "Your insurance claim has been processed. Expect a follow-up soon.",
+        timestamp: new Date("2023-10-15T10:30:00Z"),
+        status: "Sent"
+    },
+    {
+        senderId: ObjectId("60c72b2f9b1d8b3a4c8b4567"),
+        receiverId: ObjectId("60c72b2f9b1d8b3a4c8b4570"),
+        message: "Can I get an update on my insurance approval?",
+        timestamp: new Date("2023-10-16T12:00:00Z"),
+        status: "Delivered"
+    },
+    {
+        senderId: ObjectId("60c72b2f9b1d8b3a4c8b4574"),
+        receiverId: ObjectId("60c72b2f9b1d8b3a4c8b4568"),
+        message: "Please confirm your preferred time for the dental procedure.",
+        timestamp: new Date("2023-10-17T08:45:00Z"),
+        status: "Read"
+    },
+    {
+        senderId: ObjectId("60c72b2f9b1d8b3a4c8b4567"),
+        receiverId: ObjectId("60c72b2f9b1d8b3a4c8b4572"),
+        message: "Is there any availability for an earlier appointment?",
+        timestamp: new Date("2023-10-18T15:30:00Z"),
+        status: "Sent"
+    },
+    {
+        senderId: ObjectId("60c72b2f9b1d8b3a4c8b4571"),
+        receiverId: ObjectId("60c72b2f9b1d8b3a4c8b4574"),
+        message: "Lab results will be delayed by one day due to a system issue.",
+        timestamp: new Date("2023-10-19T11:00:00Z"),
+        status: "Delivered"
+    },
+    {
+        senderId: ObjectId("60c72b2f9b1d8b3a4c8b4570"),
+        receiverId: ObjectId("60c72b2f9b1d8b3a4c8b4571"),
+        message: "Please update the status of my blood test results.",
+        timestamp: new Date("2023-10-20T09:15:00Z"),
+        status: "Read"
+    },
+    {
+        senderId: ObjectId("60c72b2f9b1d8b3a4c8b4573"),
+        receiverId: ObjectId("60c72b2f9b1d8b3a4c8b4567"),
+        message: "Your health checkup reminder: October 22nd at 3:00 PM.",
+        timestamp: new Date("2023-10-21T14:30:00Z"),
+        status: "Sent"
+    },
+    {
+        senderId: ObjectId("60c72b2f9b1d8b3a4c8b4568"),
+        receiverId: ObjectId("60c72b2f9b1d8b3a4c8b4574"),
+        message: "Kindly arrive 10 minutes earlier for your eye exam.",
+        timestamp: new Date("2023-10-22T16:45:00Z"),
+        status: "Delivered"
+    },
+    {
+        senderId: ObjectId("60c72b2f9b1d8b3a4c8b4572"),
+        receiverId: ObjectId("60c72b2f9b1d8b3a4c8b4567"),
+        message: "Your vaccination reminder for October 25th at 10:00 AM.",
+        timestamp: new Date("2023-10-23T09:30:00Z"),
+        status: "Read"
+    },
+    {
+        senderId: ObjectId("60c72b2f9b1d8b3a4c8b4567"),
+        receiverId: ObjectId("60c72b2f9b1d8b3a4c8b4570"),
+        message: "Thank you for the appointment reminder. See you on the 22nd.",
+        timestamp: new Date("2023-10-24T10:45:00Z"),
+        status: "Sent"
+    },
+    {
+        senderId: ObjectId("60c72b2f9b1d8b3a4c8b4571"),
+        receiverId: ObjectId("60c72b2f9b1d8b3a4c8b4569"),
+        message: "Please submit your insurance details before your appointment.",
+        timestamp: new Date("2023-10-25T11:00:00Z"),
+        status: "Delivered"
+    },
+    {
+        senderId: ObjectId("60c72b2f9b1d8b3a4c8b4574"),
+        receiverId: ObjectId("60c72b2f9b1d8b3a4c8b4568"),
+        message: "I need to cancel my eye exam on the 22nd, please confirm.",
+        timestamp: new Date("2023-10-26T12:15:00Z"),
+        status: "Read"
+    },
+    {
+        senderId: ObjectId("60c72b2f9b1d8b3a4c8b4572"),
+        receiverId: ObjectId("60c72b2f9b1d8b3a4c8b4570"),
+        message: "Your lab results have been uploaded to your account.",
+        timestamp: new Date("2023-10-27T14:30:00Z"),
+        status: "Sent"
+    },
+    {
+        senderId: ObjectId("60c72b2f9b1d8b3a4c8b4569"),
+        receiverId: ObjectId("60c72b2f9b1d8b3a4c8b4571"),
+        message: "Please advise if I need any follow-up based on my recent lab results.",
+        timestamp: new Date("2023-10-28T15:50:00Z"),
+        status: "Delivered"
+    }
+]);
