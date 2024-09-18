@@ -1,0 +1,93 @@
+db.orders.insertMany([
+    {
+        customerId: ObjectId("66e6c00ffe5423480cccd7d4"),
+        medicines: [
+            { medicineId: ObjectId("66e6bef5fe5423480cccd7bd"), quantity: 1 },
+            { medicineId: ObjectId("66e6bef5fe5423480cccd7c1"), quantity: 1 },
+            { medicineId: ObjectId("66e6bef5fe5423480cccd7c2"), quantity: 1 }
+        ],
+        orderDate: new Date("2023-10-14T10:00:00Z"),
+        deliveryDate: new Date("2023-10-16T10:00:00Z"),
+        status: "Delivered",
+        totalAmount: 23.97
+    },
+    {
+        customerId: ObjectId("66e6c00ffe5423480cccd7d5"),
+        medicines: [
+            { medicineId: ObjectId("66e6bef5fe5423480cccd7be"), quantity: 3 },
+            { medicineId: ObjectId("66e6bef5fe5423480cccd7c0"), quantity: 2 }
+        ],
+        orderDate: new Date("2023-10-15T11:00:00Z"),
+        deliveryDate: new Date("2023-10-17T11:00:00Z"),
+        status: "Shipped",
+        totalAmount: 35.95
+    },
+    {
+        customerId: ObjectId("66e6c00ffe5423480cccd7d6"),
+        medicines: [
+            { medicineId: ObjectId("66e6bef5fe5423480cccd7c3"), quantity: 2 },
+            { medicineId: ObjectId("66e6bef5fe5423480cccd7c4"), quantity: 3 }
+        ],
+        orderDate: new Date("2023-10-16T12:00:00Z"),
+        deliveryDate: new Date("2023-10-18T12:00:00Z"),
+        status: "Processing",
+        totalAmount: 39.96
+    },
+    {
+        customerId: ObjectId("66e6c00ffe5423480cccd7d7"),
+        medicines: [
+            { medicineId: ObjectId("66e6bef5fe5423480cccd7c5"), quantity: 4 },
+            { medicineId: ObjectId("66e6bef5fe5423480cccd7c6"), quantity: 1 }
+        ],
+        orderDate: new Date("2023-10-17T13:00:00Z"),
+        deliveryDate: new Date("2023-10-19T13:00:00Z"),
+        status: "Delivered",
+        totalAmount: 28.95
+    },
+    {
+        customerId: ObjectId("66e6c00ffe5423480cccd7d8"),
+        medicines: [
+            { medicineId: ObjectId("66e6bef5fe5423480cccd7c0"), quantity: 2 },
+            { medicineId: ObjectId("66e6bef5fe5423480cccd7c2"), quantity: 1 },
+            { medicineId: ObjectId("66e6bef5fe5423480cccd7c3"), quantity: 2 }
+        ],
+        orderDate: new Date("2023-10-18T14:00:00Z"),
+        deliveryDate: new Date("2023-10-20T14:00:00Z"),
+        status: "Shipped",
+        totalAmount: 32.94
+    },
+    {
+        customerId: ObjectId("66e6c00ffe5423480cccd7d9"),
+        medicines: [
+            { medicineId: ObjectId("66e6bef5fe5423480cccd7c1"), quantity: 2 },
+            { medicineId: ObjectId("66e6bef5fe5423480cccd7c4"), quantity: 3 }
+        ],
+        orderDate: new Date("2023-10-19T15:00:00Z"),
+        deliveryDate: new Date("2023-10-21T15:00:00Z"),
+        status: "Processing",
+        totalAmount: 33.94
+    },
+    {
+        customerId: ObjectId("66e6c00ffe5423480cccd7d2"),
+        medicines: [
+            { medicineId: ObjectId("66e6bef5fe5423480cccd7c2"), quantity: 1 },
+            { medicineId: ObjectId("66e6bef5fe5423480cccd7c3"), quantity: 1 },
+            { medicineId: ObjectId("66e6bef5fe5423480cccd7c6"), quantity: 1 }
+        ],
+        orderDate: new Date("2023-10-20T16:00:00Z"),
+        deliveryDate: new Date("2023-10-22T16:00:00Z"),
+        status: "Delivered",
+        totalAmount: 26.96
+    },
+    {
+        customerId: ObjectId("66e6c00ffe5423480cccd7d3"),
+        medicines: [
+            { medicineId: ObjectId("66e6bef5fe5423480cccd7c5"), quantity: 2 },
+            { medicineId: ObjectId("66e6bef5fe5423480cccd7bd"), quantity: 1 }
+        ],
+        orderDate: new Date("2023-10-21T17:00:00Z"),
+        deliveryDate: new Date("2023-10-23T17:00:00Z"),
+        status: "Shipped",
+        totalAmount: 25.98
+    }
+]);
