@@ -1,0 +1,79 @@
+db.notifications.insertMany([
+    // Appointment Reminder Notifications
+    { 
+        userId: ObjectId("66e6a68afe5423480cccd6f3"), 
+        type: "Appointment Reminder", 
+        message: "You have an appointment scheduled for 2023-10-03 at 09:00 AM.", 
+        timestamp: new Date("2023-10-02T09:00:00Z"), 
+        status: "Unread" 
+    },
+    { 
+        userId: ObjectId("66e6a68afe5423480cccd6f4"), 
+        type: "Appointment Reminder", 
+        message: "You have an appointment scheduled for 2023-10-04 at 02:00 PM.", 
+        timestamp: new Date("2023-10-03T14:00:00Z"), 
+        status: "Read" 
+    },
+
+    // Medicine Delivery Notifications
+    { 
+        userId: ObjectId("66e6a68afe5423480cccd6f3"), 
+        type: "Medicine Delivery Notification", 
+        message: "Your medicine delivery is scheduled for 2023-10-03 between 09:00 AM and 11:00 AM.", 
+        timestamp: new Date("2023-10-02T08:00:00Z"), 
+        status: "Unread" 
+    },
+    { 
+        userId: ObjectId("66e6a68afe5423480cccd6f4"), 
+        type: "Medicine Delivery Notification", 
+        message: "Your medicine delivery is scheduled for 2023-10-04 between 02:00 PM and 04:00 PM.", 
+        timestamp: new Date("2023-10-03T10:00:00Z"), 
+        status: "Read" 
+    },
+
+    // General Notifications
+    { 
+        userId: ObjectId("66e6a68afe5423480cccd6f3"), 
+        type: "General Notification", 
+        message: "Your password has been successfully reset.", 
+        timestamp: new Date("2023-09-27T07:00:00Z"), 
+        status: "Read" 
+    },
+    { 
+        userId: ObjectId("66e6a68afe5423480cccd6f4"), 
+        type: "General Notification", 
+        message: "We have updated our privacy policy. Please review the changes.", 
+        timestamp: new Date("2023-09-26T09:00:00Z"), 
+        status: "Unread" 
+    },
+    
+    // Additional Notifications
+    { 
+        userId: ObjectId("66e6a68afe5423480cccd6f5"), 
+        type: "Appointment Reminder", 
+        message: "You have an appointment scheduled for 2023-10-05 at 11:00 AM.", 
+        timestamp: new Date("2023-10-04T11:00:00Z"), 
+        status: "Read" 
+    },
+    { 
+        userId: ObjectId("66e6a68afe5423480cccd6f6"), 
+        type: "Medicine Delivery Notification", 
+        message: "Your medicine delivery is scheduled for 2023-10-05 between 11:00 AM and 01:00 PM.", 
+        timestamp: new Date("2023-10-04T10:00:00Z"), 
+        status: "Unread" 
+    },
+    { 
+        userId: ObjectId("66e6a68afe5423480cccd6f7"), 
+        type: "General Notification", 
+        message: "Your subscription has been renewed.", 
+        timestamp: new Date("2023-09-25T10:00:00Z"), 
+        status: "Read" 
+    },
+    { 
+        userId: ObjectId("66e6a68afe5423480cccd6f8"), 
+        type: "General Notification", 
+        message: "You have a new message in your inbox.", 
+        timestamp: new Date("2023-09-24T15:00:00Z"), 
+        status: "Unread" 
+    }
+]);
