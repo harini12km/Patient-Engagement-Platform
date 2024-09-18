@@ -1,0 +1,233 @@
+db.medicalRecords.insertMany([
+    {
+        patientId: ObjectId("66e6a68afe5423480cccd6f1"),
+        records: [
+            {
+                date: new Date("2024-01-01"),
+                description: "Annual physical examination",
+                doctorId: ObjectId("66e6aa7efe5423480cccd717"),
+                notes: "Patient is in good health."
+            }
+        ]
+    },
+    {
+        patientId: ObjectId("66e6a68afe5423480cccd6f2"),
+        records: [
+            {
+                date: new Date("2024-02-05"),
+                description: "Consultation for back pain",
+                doctorId: ObjectId("66e6aa7efe5423480cccd718"),
+                notes: "Patient advised on physical therapy."
+            }
+        ]
+    },
+    {
+        patientId: ObjectId("66e6a68afe5423480cccd6f3"),
+        records: [
+            {
+                date: new Date("2024-03-10"),
+                description: "Routine dental check-up",
+                doctorId: ObjectId("66e6aa7efe5423480cccd719"),
+                notes: "Teeth cleaning and check-up done."
+            }
+        ]
+    },
+    {
+        patientId: ObjectId("66e6a68afe5423480cccd6f4"),
+        records: [
+            {
+                date: new Date("2024-04-15"),
+                description: "Eye examination",
+                doctorId: ObjectId("66e6aa7efe5423480cccd71a"),
+                notes: "No vision problems detected."
+            }
+        ]
+    },
+    {
+        patientId: ObjectId("66e6a68afe5423480cccd6f5"),
+        records: [
+            {
+                date: new Date("2024-05-20"),
+                description: "Pre-surgery consultation",
+                doctorId: ObjectId("66e6aa7efe5423480cccd71b"),
+                notes: "Patient is ready for surgery."
+            }
+        ]
+    },
+    {
+        patientId: ObjectId("66e6a68afe5423480cccd6f6"),
+        records: [
+            {
+                date: new Date("2024-06-25"),
+                description: "Post-surgery follow-up",
+                doctorId: ObjectId("66e6aa7efe5423480cccd71c"),
+                notes: "Surgery site healing well."
+            }
+        ]
+    },
+    {
+        patientId: ObjectId("66e6a68afe5423480cccd6f7"),
+        records: [
+            {
+                date: new Date("2024-07-30"),
+                description: "Chronic condition management",
+                doctorId: ObjectId("66e6aa7efe5423480cccd71d"),
+                notes: "Condition is stable with medication."
+            }
+        ]
+    },
+    {
+        patientId: ObjectId("66e6a68afe5423480cccd6f8"),
+        records: [
+            {
+                date: new Date("2024-08-15"),
+                description: "Health screening",
+                doctorId: ObjectId("66e6aa7efe5423480cccd71e"),
+                notes: "All screening results are normal."
+            }
+        ]
+    },
+    {
+        patientId: ObjectId("66e6a68afe5423480cccd6f9"),
+        records: [
+            {
+                date: new Date("2024-09-05"),
+                description: "Immunization",
+                doctorId: ObjectId("66e6aa7efe5423480cccd71f"),
+                notes: "Vaccinations updated."
+            }
+        ]
+    },
+    {
+        patientId: ObjectId("66e6a68afe5423480cccd6fa"),
+        records: [
+            {
+                date: new Date("2024-10-10"),
+                description: "Follow-up visit for chronic illness",
+                doctorId: ObjectId("66e6aa7efe5423480cccd720"),
+                notes: "Chronic illness management ongoing."
+            }
+        ]
+    },
+    {
+        patientId: ObjectId("66e6a68afe5423480cccd6fb"),
+        records: [
+            {
+                date: new Date("2024-11-15"),
+                description: "Diet consultation",
+                doctorId: ObjectId("66e6aa7efe5423480cccd721"),
+                notes: "Diet plan adjusted for weight management."
+            }
+        ]
+    },
+    {
+        patientId: ObjectId("66e6a68afe5423480cccd6fc"),
+        records: [
+            {
+                date: new Date("2024-12-20"),
+                description: "Annual health review",
+                doctorId: ObjectId("66e6aa7efe5423480cccd722"),
+                notes: "Overall health is good."
+            }
+        ]
+    },
+    {
+        patientId: ObjectId("66e6a68afe5423480cccd6fd"),
+        records: [
+            {
+                date: new Date("2025-01-10"),
+                description: "Mental health evaluation",
+                doctorId: ObjectId("66e6aa7efe5423480cccd723"),
+                notes: "Mental health evaluation completed."
+            }
+        ]
+    },
+    {
+        patientId: ObjectId("66e6a68afe5423480cccd6fe"),
+        records: [
+            {
+                date: new Date("2025-02-15"),
+                description: "Sports injury assessment",
+                doctorId: ObjectId("66e6aa7efe5423480cccd724"),
+                notes: "Injury treatment and rehabilitation."
+            }
+        ]
+    },
+    {
+        patientId: ObjectId("66e6a68afe5423480cccd6ff"),
+        records: [
+            {
+                date: new Date("2025-03-25"),
+                description: "Specialist consultation",
+                doctorId: ObjectId("66e6aa7efe5423480cccd725"),
+                notes: "Specialist consultation completed."
+            }
+        ]
+    },
+    {
+        patientId: ObjectId("66e6a68afe5423480cccd700"),
+        records: [
+            {
+                date: new Date("2025-04-30"),
+                description: "Allergy testing",
+                doctorId: ObjectId("66e6aa7efe5423480cccd726"),
+                notes: "Allergy tests conducted."
+            }
+        ]
+    },
+    {
+        patientId: ObjectId("66e6a68afe5423480cccd701"),
+        records: [
+            {
+                date: new Date("2025-05-15"),
+                description: "Cardiology evaluation",
+                doctorId: ObjectId("66e6aa7efe5423480cccd727"),
+                notes: "Cardiology evaluation completed."
+            }
+        ]
+    },
+    {
+        patientId: ObjectId("66e6a68afe5423480cccd702"),
+        records: [
+            {
+                date: new Date("2025-06-10"),
+                description: "Gastroenterology consultation",
+                doctorId: ObjectId("66e6aa7efe5423480cccd728"),
+                notes: "Consultation for digestive issues."
+            }
+        ]
+    },
+    {
+        patientId: ObjectId("66e6a68afe5423480cccd703"),
+        records: [
+            {
+                date: new Date("2025-07-20"),
+                description: "Orthopedic follow-up",
+                doctorId: ObjectId("66e6aa7efe5423480cccd729"),
+                notes: "Follow-up on orthopedic treatment."
+            }
+        ]
+    },
+    {
+        patientId: ObjectId("66e6a68afe5423480cccd704"),
+        records: [
+            {
+                date: new Date("2025-08-25"),
+                description: "Neuropsychological assessment",
+                doctorId: ObjectId("66e6aa7efe5423480cccd72a"),
+                notes: "Neuropsychological assessment completed."
+            }
+        ]
+    },
+    {
+        patientId: ObjectId("66e6a68afe5423480cccd705"),
+        records: [
+            {
+                date: new Date("2025-09-30"),
+                description: "Urology consultation",
+                doctorId: ObjectId("66e6aa7efe5423480cccd72b"),
+                notes: "Consultation for urological issues."
+            }
+        ]
+    }
+]);
