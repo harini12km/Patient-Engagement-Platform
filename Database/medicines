@@ -1,0 +1,82 @@
+db.medicines.insertMany([
+    {
+        name: "Omeprazole",
+        brand: "Prilosec",
+        price: 11.99,
+        stock: 140,
+        description: "Proton pump inhibitor used to treat acid reflux",
+        expiryDate: new Date("2025-04-30")
+    },
+    {
+        name: "Simvastatin",
+        brand: "Zocor",
+        price: 13.49,
+        stock: 130,
+        description: "Cholesterol-lowering medication",
+        expiryDate: new Date("2024-08-31")
+    },
+    {
+        name: "Sertraline",
+        brand: "Zoloft",
+        price: 14.99,
+        stock: 110,
+        description: "Antidepressant used to treat depression and anxiety",
+        expiryDate: new Date("2024-09-30")
+    },
+    {
+        name: "Azithromycin",
+        brand: "Zithromax",
+        price: 17.49,
+        stock: 120,
+        description: "Antibiotic used to treat bacterial infections",
+        expiryDate: new Date("2025-03-31")
+    },
+    {
+        name: "Albuterol",
+        brand: "Ventolin",
+        price: 12.49,
+        stock: 100,
+        description: "Bronchodilator used to treat asthma",
+        expiryDate: new Date("2024-11-30")
+    },
+    {
+        name: "Doxycycline",
+        brand: "Vibramycin",
+        price: 15.99,
+        stock: 90,
+        description: "Antibiotic used to treat a variety of infections",
+        expiryDate: new Date("2025-06-30")
+    },
+    {
+        name: "Metformin",
+        brand: "Glucophage",
+        price: 8.99,
+        stock: 150,
+        description: "Medication used to manage type 2 diabetes",
+        expiryDate: new Date("2024-12-15")
+    },
+    {
+        name: "Lorazepam",
+        brand: "Ativan",
+        price: 13.49,
+        stock: 80,
+        description: "Medication used to treat anxiety",
+        expiryDate: new Date("2025-01-31")
+    },
+    {
+        name: "Cetirizine",
+        brand: "Zyrtec",
+        price: 9.99,
+        stock: 160,
+        description: "Antihistamine used to relieve allergy symptoms",
+        expiryDate: new Date("2024-10-31")
+    },
+    {
+        name: "Fexofenadine",
+        brand: "Allegra",
+        price: 11.49,
+        stock: 140,
+        description: "Antihistamine used to relieve allergy symptoms",
+        expiryDate: new Date("2024-11-15")
+    }
+]);
