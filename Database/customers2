@@ -1,0 +1,132 @@
+db.customers.insertMany([
+    {
+        name: "Daniel Garcia",
+        age: 31,
+        gender: "Male",
+        phoneNumber: "1231231234",
+        address: {
+            street: "852 Willow St",
+            city: "Sunnydale",
+            state: "CA",
+            zip: "90123"
+        },
+        email: "daniel.garcia@example.com"
+    },
+    {
+        name: "Sophia Martinez",
+        age: 24,
+        gender: "Female",
+        phoneNumber: "2342342345",
+        address: {
+            street: "741 Oak Dr",
+            city: "Hometown",
+            state: "TX",
+            zip: "67890"
+        },
+        email: "sophia.martinez@example.com"
+    },
+    {
+        name: "Ethan Anderson",
+        age: 38,
+        gender: "Male",
+        phoneNumber: "3453453456",
+        address: {
+            street: "963 Pine Rd",
+            city: "Riverside",
+            state: "FL",
+            zip: "54321"
+        },
+        email: "ethan.anderson@example.com"
+    },
+    {
+        name: "Ava Thomas",
+        age: 29,
+        gender: "Female",
+        phoneNumber: "4564564567",
+        address: {
+            street: "159 Cedar Blvd",
+            city: "Oakland",
+            state: "NY",
+            zip: "87654"
+        },
+        email: "ava.thomas@example.com"
+    },
+    {
+        name: "Matthew Wilson",
+        age: 27,
+        gender: "Male",
+        phoneNumber: "5675675678",
+        address: {
+            street: "753 Maple Ln",
+            city: "Lakeside",
+            state: "MI",
+            zip: "34567"
+        },
+        email: "matthew.wilson@example.com"
+    },
+    {
+        name: "Isabella Lee",
+        age: 34,
+        gender: "Female",
+        phoneNumber: "6786786789",
+        address: {
+            street: "258 Birch Blvd",
+            city: "Parkview",
+            state: "IL",
+            zip: "45678"
+        },
+        email: "isabella.lee@example.com"
+    },
+    {
+        name: "James Harris",
+        age: 41,
+        gender: "Male",
+        phoneNumber: "7897897890",
+        address: {
+            street: "321 Elm Ave",
+            city: "Broadway",
+            state: "GA",
+            zip: "56789"
+        },
+        email: "james.harris@example.com"
+    },
+    {
+        name: "Mia Clark",
+        age: 22,
+        gender: "Female",
+        phoneNumber: "8908908901",
+        address: {
+            street: "654 Maple Ave",
+            city: "Eldorado",
+            state: "CO",
+            zip: "67890"
+        },
+        email: "mia.clark@example.com"
+    },
+    {
+        name: "Alexander Lewis",
+        age: 32,
+        gender: "Male",
+        phoneNumber: "9019019012",
+        address: {
+            street: "987 Cedar St",
+            city: "Harmony",
+            state: "OH",
+            zip: "78901"
+        },
+        email: "alexander.lewis@example.com"
+    },
+    {
+        name: "Charlotte White",
+        age: 27,
+        gender: "Female",
+        phoneNumber: "0123456789",
+        address: {
+            street: "852 Walnut Dr",
+            city: "Willowbrook",
+            state: "OR",
+            zip: "89012"
+        },
+        email: "charlotte.white@example.com"
+    }
+]);
