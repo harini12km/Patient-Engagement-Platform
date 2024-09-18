@@ -1,0 +1,12 @@
+db.appointments.insertMany([
+    { customerId: ObjectId("66e6dc3efe5423480cccd856"), testId: ObjectId("66e6da35fe5423480cccd836"), appointmentDate: new Date("2023-10-15T10:00:00Z"), status: "Scheduled", notes: "Initial consultation for new test" },
+    { customerId: ObjectId("66e6dc3efe5423480cccd857"), testId: ObjectId("66e6da35fe5423480cccd837"), appointmentDate: new Date("2023-10-16T11:00:00Z"), status: "Scheduled", notes: "Follow-up with results review" },
+    { customerId: ObjectId("66e6dc3efe5423480cccd858"), testId: ObjectId("66e6da35fe5423480cccd838"), appointmentDate: new Date("2023-10-17T14:00:00Z"), status: "Scheduled", notes: "Routine check-up and advice" },
+    { customerId: ObjectId("66e6dc3efe5423480cccd859"), testId: ObjectId("66e6da35fe5423480cccd839"), appointmentDate: new Date("2023-10-18T09:00:00Z"), status: "Scheduled", notes: "Consultation for ongoing treatment" },
+    { customerId: ObjectId("66e6dc3efe5423480cccd85a"), testId: ObjectId("66e6da35fe5423480cccd83a"), appointmentDate: new Date("2023-10-19T13:00:00Z"), status: "Scheduled", notes: "Specialist review and advice" },
+    { customerId: ObjectId("66e6dc3efe5423480cccd85b"), testId: ObjectId("66e6da35fe5423480cccd82c"), appointmentDate: new Date("2023-10-20T10:30:00Z"), status: "Scheduled", notes: "Diagnostic follow-up" },
+    { customerId: ObjectId("66e6dc3efe5423480cccd85c"), testId: ObjectId("66e6da35fe5423480cccd82d"), appointmentDate: new Date("2023-10-21T12:00:00Z"), status: "Scheduled", notes: "Routine assessment" },
+    { customerId: ObjectId("66e6dc3efe5423480cccd85d"), testId: ObjectId("66e6da35fe5423480cccd82e"), appointmentDate: new Date("2023-10-22T15:00:00Z"), status: "Scheduled", notes: "Consultation for new symptoms" },
+    { customerId: ObjectId("66e6dc3efe5423480cccd854"), testId: ObjectId("66e6da35fe5423480cccd82f"), appointmentDate: new Date("2023-10-23T08:00:00Z"), status: "Scheduled", notes: "Pre-treatment assessment" },
+    { customerId: ObjectId("66e6dc3efe5423480cccd855"), testId: ObjectId("66e6da35fe5423480cccd830"), appointmentDate: new Date("2023-10-24T16:00:00Z"), status: "Scheduled", notes: "Routine follow-up" }
+]);
